@@ -1,0 +1,90 @@
+<template class="pc_temp">
+    <h1 class="logo">
+        <a class="" href="./index.html">BitStore</a>
+    </h1>
+    <div class="links nav aic">
+        <div class="link about-us">
+            <el-dropdown trigger="click">
+                <span class="el-dropdown-link">
+                    <span class="text about-us" data-i18n="page_header.about_us"></span>
+                    <img src="./imgs/header/down.png" alt="">
+                </span>
+                <el-dropdown-menu slot="dropdown" class="about-us-dropdown" :class="{pc:isPc,mobile:!isPc}">
+                    <el-dropdown-item> <a class="text company" href="./company.html" data-i18n="page_header.company"></a></el-dropdown-item>
+                    <el-dropdown-item><a class="text faq" href="./faq.html" data-i18n="page_header.faq"></a></el-dropdown-item>
+                </el-dropdown-menu>
+            </el-dropdown>
+        </div>
+        <div class="link">
+            <a class="text security" href="./security.html" data-i18n="page_header.security"></a>
+        </div>
+        <div class="link">
+            <a class="text white-paper" target="_blank" ref="gitbook" href="https://docs.bit.store/" data-i18n="page_header.white_paper"></a>
+        </div>
+        <div class="link">
+            <a class="text dapp" href="https://swap.bit.store/#/trade/exchange" target="_blank" data-i18n="page_header.dapp"></a>
+        </div>
+        <div class="link global">
+            <el-dropdown trigger="click" @command="changeLang">
+                <span class="el-dropdown-link">
+                    <img src="./imgs/header/global.png" alt="">
+                    <span class="text">{{lang}}</span>
+                </span>
+                <el-dropdown-menu slot="dropdown" class="global-dropdown" :class="{pc:isPc,mobile:!isPc}">
+                    <el-dropdown-item :class="{'ac':lang=='EN'}" command="en">English</el-dropdown-item>
+                    <el-dropdown-item :class="{'ac':lang=='ID'}" command="id">Bahasa Indonesia</el-dropdown-item>
+                    <el-dropdown-item :class="{'ac':lang=='ZH'}" command="zh">繁體中文</el-dropdown-item>
+                    <el-dropdown-item :class="{'ac':lang=='VI'}" command="vi">Vietnamese</el-dropdown-item>
+                    <el-dropdown-item :class="{'ac':lang=='FR'}" command="fr">Français</el-dropdown-item>
+                    <el-dropdown-item :class="{'ac':lang=='KO'}" command="ko">한국어 공부 해요.</el-dropdown-item>
+                    <el-dropdown-item :class="{'ac':lang=='JA'}" command="ja">日本語</el-dropdown-item>
+                </el-dropdown-menu>
+            </el-dropdown>
+        </div>
+    </div>
+</template>
+<template class="mobile_temp">
+    <h1 class="logo">
+        <a class="" href="./index.html">BitStore</a>
+    </h1>
+    <div class="links nav aic">
+        <div class="link global">
+            <el-dropdown trigger="click" @command="changeLang">
+                <span class="el-dropdown-link">
+                    <span class="text">{{lang}}</span>
+                </span>
+                <el-dropdown-menu slot="dropdown" class="global-dropdown" :class="{pc:isPc,mobile:!isPc}">
+                    <el-dropdown-item :class="{'ac':lang=='EN'}" command="en">English</el-dropdown-item>
+                    <el-dropdown-item :class="{'ac':lang=='ID'}" command="id">Bahasa Indonesia</el-dropdown-item>
+                    <el-dropdown-item :class="{'ac':lang=='ZH'}" command="zh">繁體中文</el-dropdown-item>
+                    <div class="more el-dropdown-menu__item aic jcc" @click="showMoreLang=true" v-if="!showMoreLang">
+                        <span class="text">more</span>
+                        <img src="./imgs/header/m/02.png" alt="">
+                    </div>
+                    <div v-show="showMoreLang">
+                        <el-dropdown-item :class="{'ac':lang=='VI'}" command="vi">Vietnamese</el-dropdown-item>
+                        <el-dropdown-item :class="{'ac':lang=='FR'}" command="fr">Français</el-dropdown-item>
+                        <el-dropdown-item :class="{'ac':lang=='KO'}" command="ko">한국어 공부 해요.</el-dropdown-item>
+                        <el-dropdown-item :class="{'ac':lang=='JA'}" command="ja">日本語</el-dropdown-item>
+                    </div>
+                </el-dropdown-menu>
+            </el-dropdown>
+        </div>
+        <div class="link about-us">
+            <el-dropdown trigger="click">
+                <span class="el-dropdown-link">
+                    <img src="./imgs/header/m/03.png" alt="">
+                </span>
+                <el-dropdown-menu slot="dropdown" class="about-us-dropdown" :class="{pc:isPc,mobile:!isPc}">
+                    <el-dropdown-item><a class="text company" href="./company.html" data-i18n="page_header.company"></a></el-dropdown-item>
+                    <el-dropdown-item><a class="text faq" href="./faq.html" data-i18n="page_header.faq"></a></el-dropdown-item>
+                    <el-dropdown-item><a class="text security" href="./security.html" data-i18n="page_header.security"></a></el-dropdown-item>
+                    <el-dropdown-item><a class="text white-paper" target="_blank" ref="gitbook" href="https://docs.bit.store/" data-i18n="page_header.white_paper"></a></el-dropdown-item>
+                    <el-dropdown-item><a class="text dapp" href="https://swap.bit.store/#/trade/exchange" target="_blank" data-i18n="page_header.dapp"></a></el-dropdown-item>
+                </el-dropdown-menu>
+            </el-dropdown>
+        </div>
+    </div>
+</template>
+<div class="page-header-inner aic jcsb">
+</div>

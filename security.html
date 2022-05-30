@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imgs/favicon.png" type="image/png">
+    <title>Bit.Store</title>
+    <link rel="stylesheet" href="./libs/element-ui/index.css">
+    <link rel="stylesheet" href="./css/common/index.css?v=1653632093238">
+    <link rel="stylesheet" href="./css/security.css?v=1653632093238">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z629QNGNF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-2Z629QNGNF');
+    </script>
+</head>
+
+<body>
+    <div id="app" v-cloak :class="{pc:isPc,mobile:!isPc}">
+        <div class="page-body">
+            <div class="page-body-inner">
+                <template class="pc_temp" v-if="isPc">
+                    <section class="section1">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]security.your_security" data-scroll-reveal="enter left move 80px over 1s after 0.15s">
+                                Your Asset Security. <br> <span class='c'>Our Priority.</span>
+                            </div>
+                            <div class="section-body flex">
+                                <div class="fl aic">
+                                    <div class="img-box" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <img src="./imgs/security/01_01.png" alt="">
+                                    </div>
+                                    <div class="img-box" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <img src="./imgs/security/01_02.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="fr">
+                                    <div class="p" data-scroll-reveal="enter right move 80px over 1s after 0.15s" data-i18n="[html]security.the_cryptoassets">The cryptoassets of Bit.Store will be entrusted to Cobo, Asia Pacific’s Largest Crypto Custodian and Asset Management Platform, that will insure any loss of assets.</div>
+                                    <div class="p" data-scroll-reveal="enter right move 80px over 1s after 0.15s" data-i18n="[html]security.bitstore_assets">Bit.Store assets will be regularly audited by world-renowned PWC to ensure the safety of user assets.</div>
+                                </div>
+                            </div>
+                            <div class="list jcsb">
+                                <div class="item aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="img-box">
+                                        <img src="./imgs/security/01_04.png" alt="">
+                                    </div>
+                                    <div class="text" data-i18n="[html]security.3rd">
+                                        3rd Party <br>Custody
+                                    </div>
+                                </div>
+                                <div class="item aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="img-box">
+                                        <img src="./imgs/security/01_05.png" alt="">
+                                    </div>
+                                    <div class="text" data-i18n="[html]security.quarterly">
+                                        Quarterly <br>Reviews
+                                    </div>
+                                </div>
+                                <div class="item aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="img-box">
+                                        <img src="./imgs/security/01_06.png" alt="">
+                                    </div>
+                                    <div class="text" data-i18n="[html]security.multi_layer">
+                                        Multi-Layer <br>
+                                        Security Features
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section2">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]security.mainstream" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                Mainstream <span class='c'> Payment Partner</span>
+                            </div>
+                            <div class="list aic fww">
+                                <div class="item" v-for="item in 14" :key="item" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="img-box">
+                                        <img :src="'./imgs/security/02_'+String((item+1)).padStart(2,0)+'.png'" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section3">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]security.fiat" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                <span class='c'> Fiat-Crypto</span>Gateway
+                            </div>
+                            <div class="p" data-i18n="[html]security.at_present" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">At present, our fiat-crypto gateway services covers 157 countries. </div>
+                            <div class="list ">
+                                <div class="row aic fww jcsb" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="item" v-for="item in 7" :key="item">
+                                        <div class="img-box">
+                                            <img :src="'./imgs/security/03_'+String(item).padStart(2,0)+'.png'" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row aic fww jcsb" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="item" v-for="item in 7" :key="item">
+                                        <div class="img-box">
+                                            <img :src="'./imgs/security/03_'+String(item+7).padStart(2,0)+'.png'" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row aic fww jcsb" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="item" v-for="item in 7" :key="item">
+                                        <div class="img-box">
+                                            <img :src="'./imgs/security/03_'+String(item+14).padStart(2,0)+'.png'" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section4">
+                        <div class="section-inner">
+                            <div class="bg fdc aife">
+                                <div class="p1 aic jcc" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s" data-i18n="[html]security.european">European</div>
+                                <div class="p2 aic jcc" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s" data-i18n="[html]security.cryptocurrency">Cryptocurrency <br> Exchange Licence</div>
+                                <div class="p3 aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <img src="./imgs/security/04_03.png" alt="">
+                                    <span class="text"><span data-i18n="[html]security.license_code">License code:</span> 305987424</span>
+                                </div>
+                                <div class="p4 aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <img src="./imgs/security/04_04.png" alt="">
+                                    <a href="https://www.registrucentras.lt/" target="_blank">https://www.registrucentras.lt/</a>
+                                </div>
+                            </div>
+                            <div class="fr" data-scroll-reveal="enter right move 80px over 1s after 0.15s">
+                                <img src="./imgs/security/04_02.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section5">
+                        <div class="section-inner aic jcc">
+                            <div class="fl fdc aife">
+                                <div class="p1" data-i18n="[html]security.bitstore_master" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <span class='c'>Bit.Store</span> Master Card
+                                </div>
+                                <div class="p2" data-i18n="[html]security.turn_your" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    Turn your crypto into dollars. Spend instantly.
+                                </div>
+                                <div class="line" data-scroll-reveal="enter left move 80px over 1s after 0.15s"></div>
+                                <div class="p3" data-i18n="[html]security.our_card" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    Our card lets you spend your crypto like cash. Bit.Store rigorously manages regulatory licensing necessary to implement card protocols that are fully compliant.
+                                </div>
+                            </div>
+                            <div class="fr" data-scroll-reveal="enter right move 80px over 1s after 0.15s">
+                                <img src="./imgs/security/05_01.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section11">
+                        <div class="section-inner">
+                            <div class="p1" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s" data-i18n="[html]index.slogan1">Explore Your Crypto Journey with Bit.Store <br>
+                                and Grow Your Portfolio with Ease</div>
+                            <div class="p2" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s" data-i18n="[html]index.slogan2">Store, Trade, And Earn With Top Cryptocurrencies In Minutes.</div>
+                            <div class="p3 aic jcc">
+                                <a href="./downloadguide.html" class="p3-inner aic jcc" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                    <img src="./imgs/index/11_02.png" alt="">
+                                    <span class="text" data-i18n="[html]index.get_app">Get the APP</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </template>
+                <template class="mobile_temp" v-else>
+                    <section class="section1">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]security.your_security" data-scroll-reveal="enter left move 80px over 1s after 0.15s">
+                                Your Asset Security. <br> <span class='c'>Our Priority.</span>
+                            </div>
+                            <div class="section-body">
+                                <div class="fl aic jcc">
+                                    <div class="img-box" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <img src="./imgs/security/01_01.png" alt="">
+                                    </div>
+                                    <div class="img-box" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <img src="./imgs/security/01_02.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="fr">
+                                    <div class="p" data-scroll-reveal="enter right move 80px over 1s after 0.15s" data-i18n="[html]security.the_cryptoassets">The cryptoassets of Bit.Store will be entrusted to Cobo, Asia Pacific’s Largest Crypto Custodian and Asset Management Platform, that will insure any loss of assets.</div>
+                                    <div class="p" data-scroll-reveal="enter right move 80px over 1s after 0.15s" data-i18n="[html]security.bitstore_assets">Bit.Store assets will be regularly audited by world-renowned PWC to ensure the safety of user assets.</div>
+                                </div>
+                            </div>
+                            <div class="list jcsb">
+                                <div class="item aic fdc " data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="img-box">
+                                        <img src="./imgs/security/01_04.png" alt="">
+                                    </div>
+                                    <div class="text" data-i18n="[html]security.3rd">
+                                        3rd Party <br>Custody
+                                    </div>
+                                </div>
+                                <div class="item aic fdc " data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="img-box">
+                                        <img src="./imgs/security/01_05.png" alt="">
+                                    </div>
+                                    <div class="text" data-i18n="[html]security.quarterly">
+                                        Quarterly <br>Reviews
+                                    </div>
+                                </div>
+                                <div class="item aic fdc " data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="img-box">
+                                        <img src="./imgs/security/01_06.png" alt="">
+                                    </div>
+                                    <div class="text" data-i18n="[html]security.multi_layer">
+                                        Multi-Layer <br>
+                                        Security Features
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section2">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]security.mainstream" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                Mainstream <span class='c'> Payment Partner</span>
+                            </div>
+                            <div class="list aic jcc fww">
+                                <div class="item" v-for="item in 14" :key="item" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="img-box">
+                                        <img :src="'./imgs/security/m/02_'+String((item+1)).padStart(2,0)+'.png'" alt="">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-box"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section3">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]security.fiat" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                <span class='c'> Fiat-Crypto</span>Gateway
+                            </div>
+                            <div class="p" data-i18n="[html]security.at_present" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">At present, our fiat-crypto gateway services covers 157 countries. </div>
+                            <div class="list ">
+                                <div class="row aic fww jcsb" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="item" v-for="item in 6" :key="item">
+                                        <div class="img-box">
+                                            <img :src="'./imgs/security/m/03_'+String(item).padStart(2,0)+'.png'" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row aic fww jcsb" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="item" v-for="item in 6" :key="item">
+                                        <div class="img-box">
+                                            <img :src="'./imgs/security/m/03_'+String(item+6).padStart(2,0)+'.png'" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row aic fww jcsb" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="item" v-for="item in 6" :key="item">
+                                        <div class="img-box">
+                                            <img :src="'./imgs/security/m/03_'+String(item+12).padStart(2,0)+'.png'" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row aic fww jcsb" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="item" v-for="item in 3" :key="item">
+                                        <div class="img-box">
+                                            <img :src="'./imgs/security/m/03_'+String(item+18).padStart(2,0)+'.png'" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item" v-for="item in 3" :key="item">
+                                        <div class="img-box">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section4">
+                        <div class="section-inner">
+                            <div class="bg fdc ">
+                                <div class="p1 aic jcc" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s" data-i18n="[html]security.european">European</div>
+                                <div class="p2 aic jcc" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s" data-i18n="[html]security.cryptocurrency">Cryptocurrency <br> Exchange Licence</div>
+                                <div class="p3-p4-box aic jcc">
+                                    <div class="p3 aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <img src="./imgs/security/m/04_03.png" alt="">
+                                        <span class="text"><span data-i18n="[html]security.license_code">License code:</span> 305987424</span>
+                                    </div>
+                                    <div class="p4 aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <img src="./imgs/security/m/04_04.png" alt="">
+                                        <a href="https://www.registrucentras.lt/" target="_blank">https://www.registrucentras.lt/</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fr" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                <img src="./imgs/security/m/04_02.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section5">
+                        <div class="section-inner fdc aic jcc">
+                            <div class="fl fdc aic jcc">
+                                <div class="p1" data-i18n="[html]security.bitstore_master" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <span class='c'>Bit.Store</span> Master Card
+                                </div>
+                                <div class="p2" data-i18n="[html]security.turn_your" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    Turn your crypto into dollars. Spend instantly.
+                                </div>
+                                <div class="p3" data-i18n="[html]security.our_card" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    Our card lets you spend your crypto like cash. Bit.Store rigorously manages regulatory licensing necessary to implement card protocols that are fully compliant.
+                                </div>
+                            </div>
+                            <div class="fr" data-scroll-reveal="enter right move 80px over 1s after 0.15s">
+                                <img src="./imgs/security/m/05_01.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section11">
+                        <div class="section-inner">
+                            <div class="p1" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s" data-i18n="[html]index.slogan1">Explore Your Crypto Journey with Bit.Store <br>
+                                and Grow Your Portfolio with Ease</div>
+                            <div class="p2" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s" data-i18n="[html]index.slogan2">Store, Trade, And Earn With Top Cryptocurrencies In Minutes.</div>
+                            <div class="p3 aic jcc">
+                                <a href="./downloadguide.html" class="p3-inner aic jcc" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                    <img src="./imgs/index/m/11_02.png" alt="">
+                                    <span class="text" data-i18n="[html]index.get_app">Get the APP</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </template>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/i18next.min.js"></script>
+<script src="./js/jquery-i18next.min.js"></script>
+<script src="./js/i18nextHttpBackend.min.js"></script>
+<script src="./js/i18nextBrowserLanguageDetector.min.js"></script>
+<script src="./libs/vue/vue.js"></script>
+<script src="./libs/element-ui/index.js"></script>
+<script src="./js/scrollReveal.js"></script>
+<script src="./js/common.js?v=1653632093238"></script>
+
+</html>

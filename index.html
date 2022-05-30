@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imgs/favicon.png" type="image/png">
+    <title>Bit.Store</title>
+    <link rel="stylesheet" href="./libs/element-ui/index.css">
+    <link rel="stylesheet" href="./css/common/index.css?v=1653632093238">
+    <link rel="stylesheet" href="./css/index.css?v=1653632093238">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z629QNGNF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-2Z629QNGNF');
+    </script>
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.8.1/vconsole.min.js"></script>
+    <script> var vConsole = new VConsole(); </script> -->
+</head>
+
+<body>
+    <div id="app" v-cloak :class="{pc:isPc,mobile:!isPc}">
+        <div class="page-body">
+            <div class="page-body-inner">
+                <template class="pc_temp" v-if="isPc">
+                    <section class="section1">
+                        <div class="section-inner">
+                            <div class="fl">
+                                <div class="row1">
+                                    <img data-scroll-reveal="enter left move 100px over 1s after 0.05s" src="./imgs/index/web3.png" alt="">
+                                </div>
+                                <div class="row2" data-scroll-reveal="enter bottom move 30px over 1s after 0.1s" data-i18n="[html]index.dao_platform">Social Investment <br> DAO Platform</div>
+                                <div class="row3" data-scroll-reveal="enter bottom move 30px over 1s after 0.05s">
+                                    <div class="p1 aic jcsb">
+                                        <span class="text" data-i18n="index.learn">Learn</span>
+                                        <span class="text" data-i18n="index.trade">Trade</span>
+                                        <span class="text" data-i18n="index.communicate">communicate</span>
+                                        <span class="text" data-i18n="index.earn">Earn</span>
+                                    </div>
+                                    <div class="p2" data-i18n="index.web3_metaverse">A Web 3.0 Social-Fi Metaverse that enables regular investors to enter the cryptocurrency market in a simple and transparent way.</div>
+                                </div>
+                            </div>
+                            <div class="fr">
+                                <div class="img-box">
+                                    <img data-scroll-reveal="enter right move 100px over 1s after 0.05s" src="./imgs/index/kv.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section2">
+                        <div class="decorate">
+                            <div class="decorate1">
+                                <img src="./imgs/index/001.png" alt="">
+                            </div>
+                            <div class="decorate2">
+                                <img src="./imgs/index/009.png" alt="">
+                            </div>
+                            <div class="decorate3">
+                                <img src="./imgs/index/010.png" alt="">
+                            </div>
+                        </div>
+                        <div class="section-inner">
+                            <div class="section-title jcc" data-scroll-reveal="enter bottom move 30px over 1s after 0.05s">
+                                <div class="text" data-i18n="[html]index.traditional_vs_dao">
+                                    Traditional Investme <br> <span class='c'>VS</span> Investment DAO
+                                </div>
+                            </div>
+                            <div class="bg1">
+                                <div class="bg2">
+                                    <div class="row">
+                                        <div class="col1" data-scroll-reveal="enter left move 30px over 1s after 0.05s">
+                                            <div class="p1" data-i18n="[html]index.power_held">Power Held By <br> Few At The Top</div>
+                                            <div class="p2" data-i18n="[html]index.regid">Rigid, Anti-competitive,<br> Hierarchical, Opaque</div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="p1" data-scroll-reveal="enter bottom move 30px over 1s after 0.05s" data-i18n="[html]index.traditional_organization">Traditional <br> Organization</div>
+                                            <div class="img-box">
+                                                <img src="./imgs/index/006.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col3">
+                                            <div class="img-box">
+                                                <img src="./imgs/index/007.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col4">
+                                            <div class="p1" data-scroll-reveal="enter bottom move 30px over 1s after 0.05s" data-i18n="[html]index.dao">DAO</div>
+                                            <div class="img-box">
+                                                <img src="./imgs/index/008.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col5" data-scroll-reveal="enter right move 30px over 1s after 0.05s">
+                                            <div class="p1" data-i18n="[html]index.power_shared">Power Shared <br> By All</div>
+                                            <div class="p2" data-i18n="[html]index.agile">Agile,Collaborative, <br> Diverse, Transparent</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="section345-box">
+                        <section class="section3 index-section3">
+                            <div class="section-inner ">
+                                <div class="inner-top aic">
+                                    <div class="fl">
+                                        <el-carousel @change="onCarouselChange" indicator-position="none" ref="el_carousel" arrow="never" :autoplay="autoplay">
+                                            <el-carousel-item>
+                                                <div class="img-box">
+                                                    <img src="./imgs/index/03_02_01.png" alt="">
+                                                </div>
+                                            </el-carousel-item>
+                                            <el-carousel-item>
+                                                <div class="img-box">
+                                                    <img src="./imgs/index/03_02_02.png" alt="">
+                                                </div>
+                                            </el-carousel-item>
+                                            <el-carousel-item>
+                                                <div class="img-box">
+                                                    <img src="./imgs/index/03_02_03.png" alt="">
+                                                </div>
+                                            </el-carousel-item>
+                                        </el-carousel>
+                                    </div>
+                                    <div class="fr">
+                                        <div class="list">
+                                            <div class="item aic" @mouseleave="onCarouseLeave" @mouseover="changeCarousel(0)" :class="{'ac':carouselIndex==0}">
+                                                <div class="img-box">
+                                                    <img class="img1" src="./imgs/index/03_03.png" alt="">
+                                                    <img class="img2" src="./imgs/index/03_04.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <div class="content-title" data-scroll-reveal="enter right move 30px over 1s after 0.05s" data-i18n="[html]index.insights">Insights From Other Investors</div>
+                                                    <div class="p" data-scroll-reveal="enter right move 30px over 1s after 0.15s" data-i18n="[html]index.get_insights">Get insights, Share Knowledge, and view content revelent to your portfolio and beyond</div>
+                                                </div>
+                                            </div>
+                                            <div class="item aic" @mouseleave="onCarouseLeave" @mouseover="changeCarousel(1)" :class="{'ac':carouselIndex==1}">
+                                                <div class="img-box">
+                                                    <img class="img1" src="./imgs/index/03_03.png" alt="">
+                                                    <img class="img2" src="./imgs/index/03_04.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <div class="content-title" data-scroll-reveal="enter right move 30px over 1s after 0.25s" data-i18n="[html]index.learning">Learning</div>
+                                                    <div class="p" data-scroll-reveal="enter right move 30px over 1s after 0.35s" data-i18n="[html]index.get_the">Get the latest blockchain information and news. Get support,provide feedback, ask anything about DAOs</div>
+                                                </div>
+                                            </div>
+                                            <div class="item aic" @mouseleave="onCarouseLeave" @mouseover="changeCarousel(2)" :class="{'ac':carouselIndex==2}">
+                                                <div class="img-box">
+                                                    <img class="img1" src="./imgs/index/03_03.png" alt="">
+                                                    <img class="img2" src="./imgs/index/03_04.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <div class="content-title" data-scroll-reveal="enter right move 30px over 1s after 0.45s" data-i18n="[html]index.investment_simp">Investment, Simplified</div>
+                                                    <div class="p" data-scroll-reveal="enter right move 30px over 1s after 0.55s" data-i18n="[html]index.invest_crypto">Invest crypto in minutes through bank transfer, cards, or mobile wallets online. Easy for every investor including crypto beginners.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inner-bottom">
+                                    <div class="list aic jcc">
+                                        <div class="item item1 aic" data-scroll-reveal="enter bottom move 100px over 1s after 0.15s">
+                                            <div class="img-box">
+                                                <img src="./imgs/index/03_06.png" alt="">
+                                            </div>
+                                            <div class="fr fdc aic">
+                                                <div class="p1"><span id="dau">150000</span>+</div>
+                                                <div class="p2 aic jcc" data-i18n="[html]index.dau">DAU</div>
+                                            </div>
+                                        </div>
+                                        <div class="item item2 aic" data-scroll-reveal="enter bottom move 100px over 1s after 0.25s">
+                                            <div class="img-box">
+                                                <img src="./imgs/index/03_07.png" alt="">
+                                            </div>
+                                            <div class="fr fdc aic">
+                                                <div class="p1"><span id="ave">1700</span>M+</div>
+                                                <div class="p2 aic jcc" data-i18n="[html]index.ave">AVE DAILY INVESTMENT</div>
+                                            </div>
+                                        </div>
+                                        <div class="item item3 aic" data-scroll-reveal="enter bottom move 100px over 1s after 0.35s">
+                                            <div class="img-box">
+                                                <img src="./imgs/index/03_08.png" alt="">
+                                            </div>
+                                            <div class="fr fdc aic">
+                                                <div class="p1"><span id="total">500000</span>+</div>
+                                                <div class="p2 aic jcc" data-i18n="[html]index.total_registers">TOTAL REGISTERS</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section4">
+                            <div class="section-inner section-inner1">
+                                <div class="inner-top  jcc">
+                                    <div class="fl aic">
+                                        <div class="col1 fdc aife">
+                                            <div class="p1">
+                                                <div class="img-box">
+                                                    <img src="./imgs/index/04_01.png" alt="">
+                                                </div>
+                                                <span class="text" data-scroll-reveal="enter left move 100px over 1s after 0.15s" data-i18n="[html]index.socialfi"> SocialFi </span>
+                                            </div>
+                                            <div class="p2"><span class="text" data-scroll-reveal="enter left move 100px over 1s after 0.25s" data-i18n="[html]index.community">Community</span></div>
+                                            <div class="p3"><span class="text" data-scroll-reveal="enter left move 100px over 1s after 0.35s" data-i18n="[html]index.investment">Investment</span></div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="img-box">
+                                                <img src="./imgs/index/04_02.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fr">
+                                        <div class="p" data-i18n="[html]index.bit_store_empowers" data-scroll-reveal="enter right move 100px over 1s after 0.15s">Bit.Store empowers small investors to leverage social networks and interactive tools, to engage with other investors, indepently make informed investment choices, and share achievements. </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-inner section-inner2">
+                                <div class="img-box1" data-scroll-reveal="enter bottom move 100px over 1s after 0.15s">
+                                    <img src="./imgs/index/04_03.png" alt="">
+                                </div>
+                                <div class="img-box2" data-scroll-reveal="enter right move 100px over 1s after 0.15s">
+                                    <img src="./imgs/index/04_04.png" alt="">
+                                </div>
+                            </div>
+                            <div class="section-inner section-inner3">
+                                <div class="section-title" data-i18n="[html]index.why_bitstore" data-scroll-reveal="enter top move 50px over 1s after 0.15s">
+                                    Why <span class='c'>Bit.Store</span>
+                                </div>
+                                <div class="list aic jcsb">
+                                    <div class="item" data-scroll-reveal="enter top bottom 50px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/05_02.png" alt="">
+                                            <span class="text" data-i18n="index.socialization"></span>
+                                        </div>
+                                        <div class="p" data-i18n="index.users_create"></div>
+                                    </div>
+                                    <div class="item" data-scroll-reveal="enter top bottom 60px over 1s after 0.25s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/05_03.png" alt="">
+                                            <span class="text" data-i18n="index.simplicity"></span>
+                                        </div>
+                                        <div class="p" data-i18n="index.stellar"></div>
+                                    </div>
+                                    <div class="item" data-scroll-reveal="enter top bottom 70px over 1s after 0.35s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/05_04.png" alt="">
+                                            <span class="text" data-i18n="index.security"></span>
+                                        </div>
+                                        <div class="p" data-i18n="index.no_compromises"></div>
+                                    </div>
+                                    <div class="item" data-scroll-reveal="enter top bottom 80px over 1s after 0.45s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/05_05.png" alt="">
+                                            <span class="text" data-i18n="index.innovation"></span>
+                                        </div>
+                                        <div class="p" data-i18n="index.thinking_out"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <section class="section6">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]index.road_map" data-scroll-reveal="enter left move 50px over 1s after 0.15s">
+                                Road <span class='c'>Map</span>
+                            </div>
+                            <div class="img-box">
+                                <div class="row row1 jcsb">
+                                    <div class="col "></div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2021_Mar"></div>
+                                        <div class="col-content" data-i18n="index.2021_Mar_map"></div>
+                                    </div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2021_Jun"></div>
+                                        <div class="col-content" data-i18n="index.2021_Jun_map"></div>
+                                    </div>
+                                </div>
+                                <div class="row row2 jcsb">
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2022_Feb"></div>
+                                        <div class="col-content" data-i18n="index.2022_Feb_map"></div>
+                                    </div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2021_Sep"></div>
+                                        <div class="col-content" data-i18n="index.2021_Sep_map"></div>
+                                    </div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2021_Jul"></div>
+                                        <div class="col-content" data-i18n="index.2021_Jul_map"></div>
+                                    </div>
+                                </div>
+                                <div class="row row3 jcsb">
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2022_Mar"></div>
+                                        <div class="col-content" data-i18n="index.2022_Mar_map"></div>
+                                    </div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2022_Apr"></div>
+                                        <div class="col-content" data-i18n="index.2022_Apr_map"></div>
+                                    </div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2022_Q3"></div>
+                                        <div class="col-content" data-i18n="index.2022_Q3_map"></div>
+                                    </div>
+                                </div>
+                                <div class="row row4 jcsb">
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                    </div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2023_Q1"></div>
+                                        <div class="col-content" data-i18n="index.2023_Q1_map"></div>
+                                    </div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2022_Q4"></div>
+                                        <div class="col-content" data-i18n="index.2022_Q4_map"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section7">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]index.we_are" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                We Are Committed To Building The World's First <br> One-Stop <span class='c'>Crypto Investment DAO</span>
+                            </div>
+                            <div class="img-box" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                <img src="./imgs/index/07_01.png" alt="">
+                            </div>
+                            <div class="p" data-i18n="[html]index.empowers_small" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">Bit.Store empowers small investors to leverage social networks and <br>interactive tools, to engage with other investors, indepently make <br> informed investment choices, and share achievements.
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section8">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]index.our_token" data-scroll-reveal="enter right move 50px over 1s after 0.15s">
+                                Our <span class='c'>Token</span>
+                            </div>
+                            <div class="section-body">
+                                <div class="p" data-i18n="[html]index.click_on" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">Click On Each Logo To Buy <span class="c"> Bit.Store (STORE) </span> On Any Of These Exchanges</div>
+                                <div class="list  aic jcc">
+                                    <a href="https://pancakeswap.finance/swap?outputCurrency=0x65d9033cff96782394dab5dbef17fa771bbe1732" target="_blank" class="item" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/08_01.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/08_08.png" alt="">
+                                        </span>
+                                    </a>
+                                    <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x31ea0de8119307aa264bb4b38727aab4e36b074f&chain=mainnet" target="_blank" class="item" data-scroll-reveal="enter bottom move 60px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/08_02.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/08_08.png" alt="">
+                                        </span>
+                                    </a>
+                                    <a href="https://www.huobi.com/en-us/exchange/store_usdt/" target="_blank" class="item" data-scroll-reveal="enter bottom move 70px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/08_03.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/08_08.png" alt="">
+                                        </span>
+                                    </a>
+                                    <a href="https://www.mexc.com/zh-CN/exchange/STORE_USDT" target="_blank" class="item" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/08_04.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/08_08.png" alt="">
+                                        </span>
+                                    </a>
+                                    <a href="https://www.bitwellex.com/trade/spot/STORE_USDT" target="_blank" class="item" data-scroll-reveal="enter bottom move 90px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/08_05.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/08_08.png" alt="">
+                                        </span>
+                                    </a>
+                                    <a href="https://www.gateio.tv/cn/trade/STORE_USDT" target="_blank" class="item" data-scroll-reveal="enter bottom move 100px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/08_06.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/08_08.png" alt="">
+                                        </span>
+                                    </a>
+                                    <a href="https://www.bitmart.com/trade/en?layout=basic&symbol=STORE_USDT" target="_blank" class="item" data-scroll-reveal="enter bottom move 110px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/08_07.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/08_08.png" alt="">
+                                        </span>
+                                    </a> <a href="https://www.kucoin.com/trade/STORE-USDT" target="_blank" class="item" data-scroll-reveal="enter bottom move 110px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/08_08_01.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/08_08.png" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="row bt aic">
+                                    <div class="col f1 aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <img src="./imgs/index/08_09.png" alt="">
+                                        <span class="text" data-i18n="[html]index.get_airdrop">Get Bit.Store Airdrop</span>
+                                    </div>
+                                    <div class="col f1 aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <img src="./imgs/index/08_09.png" alt="">
+                                        <span class="text" data-i18n="[html]index.get_proportional">Get Proportional Voting Rights</span>
+                                    </div>
+                                </div>
+                                <div class="row aic">
+                                    <div class="col f1 aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <img src="./imgs/index/08_09.png" alt="">
+                                        <span class="text" data-i18n="[html]index.qualification">Qualification Of Joining Some VIP Group</span>
+                                    </div>
+                                    <div class="col f1 aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <img src="./imgs/index/08_09.png" alt="">
+                                        <span class="text" data-i18n="[html]index.level_up">Level Up Your Badge To Earn More</span>
+                                    </div>
+                                </div>
+                                <div class="come-soon" data-i18n="[html]index.come_soon" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">Come Soon</div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section9">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]index.our_partners" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                Our <span class='c'>Partners</span>
+                            </div>
+                            <div class="list">
+                                <div class="row aic jcc" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/09_01.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/09_02.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/09_03.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/09_04.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/09_05.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row aic jcc" data-scroll-reveal="enter bottom move 100px over 1s after 0.15s">
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/09_06.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/09_07.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/09_08.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/09_09.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/09_10.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row aic jcc" data-scroll-reveal="enter bottom move 120px over 1s after 0.15s">
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/09_11.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/09_12.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/09_13.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/09_14.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/09_15.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section10">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]index.media_release" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                Media <span class='c'>Release</span>
+                            </div>
+                            <div class="list aic jcsb">
+                                <div class="item fdc aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <a target="_blank" href="https://www.prnewswire.com/news-releases/bitstore-launches-liquidity-pools-in-partnership-with-encentiveio-301508847.html" class="img-box">
+                                        <img src="./imgs/index/10_01.png" alt="">
+                                    </a>
+                                    <a target="_blank" href="https://www.prnewswire.com/news-releases/bitstore-launches-liquidity-pools-in-partnership-with-encentiveio-301508847.html" class="text toe">https://www.prnewswire.com/news-releases/bitstore-launches-liquidity-pools-in-partnership-with-encentiveio-301508847.html </a>
+                                </div>
+                                <div class="item fdc aic" data-scroll-reveal="enter bottom move 90px over 1s after 0.15s">
+                                    <a target="_blank" href="https://finance.yahoo.com/news/socialfi-investment-platform-bit-store-042700661.html" class="img-box">
+                                        <img src="./imgs/index/10_02.png" alt="">
+                                    </a>
+                                    <a target="_blank" href="https://finance.yahoo.com/news/socialfi-investment-platform-bit-store-042700661.html" class="text toe">https://finance.yahoo.com/news/socialfi-investment-platform-bit-store-042700661.html</a>
+                                </div>
+                                <div class="item fdc aic" data-scroll-reveal="enter bottom move 100px over 1s after 0.15s">
+                                    <a target="_blank" href="https://www.timesnewswire.com/pressrelease/bit-storea-socialfi-investment-platform-to-list-on-bitmart-exchange/" class="img-box">
+                                        <img src="./imgs/index/10_03.png" alt="">
+                                    </a>
+                                    <a target="_blank" href="https://www.timesnewswire.com/pressrelease/bit-storea-socialfi-investment-platform-to-list-on-bitmart-exchange/" class="text toe">https://www.timesnewswire.com/pressrelease/bit-storea-socialfi-investment-platform-to-list-on-bitmart-exchange/ </a>
+                                </div>
+                                <div class="item fdc aic" data-scroll-reveal="enter bottom move 110px over 1s after 0.15s">
+                                    <a target="_blank" href="https://bitcoinist.com/social-cryptocurrency-investment-platform-bit-store-launches-crypto-linked-card/" class="img-box">
+                                        <img src="./imgs/index/10_04.png" alt="">
+                                    </a>
+                                    <a target="_blank" href="https://bitcoinist.com/social-cryptocurrency-investment-platform-bit-store-launches-crypto-linked-card/" class="text toe">https://bitcoinist.com/social-cryptocurrency-investment-platform-bit-store-launches-crypto-linked-card/</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section11">
+                        <div class="section-inner">
+                            <div class="p1" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s" data-i18n="[html]index.slogan1">Explore Your Crypto Journey with Bit.Store <br>
+                                and Grow Your Portfolio with Ease</div>
+                            <div class="p2" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s" data-i18n="[html]index.slogan2">Store, Trade, And Earn With Top Cryptocurrencies In Minutes.</div>
+                            <div class="p3 aic jcc">
+                                <a href="./downloadguide.html" class="p3-inner aic jcc" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                    <img src="./imgs/index/11_02.png" alt="">
+                                    <span class="text" data-i18n="[html]index.get_app">Get the APP</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="fixed-links">
+                        <a href="https://twitter.com/www_bit_store" target="_blank" class="twitter"><img src="./imgs/index/tw.png" alt=""></a>
+                        <a href="https://t.me/Bitstore_official" target="_blank" class="telegram"><img src="./imgs/index/tg.png" alt=""></a>
+                        <a href="./downloadguide.html" class="download"><img src="./imgs/index/download.png" alt=""></a>
+                    </section>
+                </template>
+                <template class="mobile_temp" v-else>
+                    <section class="section1">
+                        <div class="section-inner">
+                            <div class="fr">
+                                <div class="img-box">
+                                    <img data-scroll-reveal="enter right move 100px over 1s after 0.05s" src="./imgs/index/m/01_02.png" alt="">
+                                </div>
+                            </div>
+                            <div class="fl">
+                                <div class="row1">
+                                    <img data-scroll-reveal="enter left move 100px over 1s after 0.05s" src="./imgs/index/m/01_03.png" alt="">
+                                </div>
+                                <div class="row2" data-scroll-reveal="enter bottom move 30px over 1s after 0.1s" data-i18n="[html]index.dao_platform">Social Investment <br> DAO Platform</div>
+                                <div class="row3" data-scroll-reveal="enter bottom move 30px over 1s after 0.05s">
+                                    <div class="p1 aic jcsb fww">
+                                        <span class="text" data-i18n="index.learn">Learn</span>
+                                        <span class="text" data-i18n="index.trade">Trade</span>
+                                        <span class="text" data-i18n="index.communicate">communicate</span>
+                                        <span class="text" data-i18n="index.earn">Earn</span>
+                                    </div>
+                                    <div class="p2" data-i18n="index.web3_metaverse">A Web 3.0 Social-Fi Metaverse that enables regular investors to enter the cryptocurrency market in a simple and transparent way.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section2">
+                        <div class="decorate">
+                            <div class="decorate1">
+                                <img src="./imgs/index/m/02_03.png" alt="">
+                            </div>
+                            <div class="decorate2">
+                                <img src="./imgs/index/m/02_07.png" alt="">
+                            </div>
+                        </div>
+                        <div class="section-inner">
+                            <div class="section-title jcc" data-scroll-reveal="enter bottom move 30px over 1s after 0.05s">
+                                <div class="text" data-i18n="[html]index.traditional_vs_dao">
+                                    Traditional Investme <br> <span class='c'>VS</span> Investment DAO
+                                </div>
+                            </div>
+                            <div class="bg1">
+                                <div class="bg2">
+                                    <div class="row">
+                                        <div class="col1" data-scroll-reveal="enter left move 30px over 1s after 0.05s">
+                                            <div class="p1" data-i18n="[html]index.power_held">Power Held By <br> Few At The Top</div>
+                                            <div class="p2" data-i18n="[html]index.regid">Rigid, Anti-competitive,<br> Hierarchical, Opaque</div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="p1" data-scroll-reveal="enter bottom move 30px over 1s after 0.05s" data-i18n="[html]index.traditional_organization">Traditional <br> Organization</div>
+                                            <div class="img-box">
+                                                <img src="./imgs/index/m/02_05.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col3"></div>
+                                        <div class="col4">
+                                            <div class="p1" data-scroll-reveal="enter bottom move 30px over 1s after 0.05s" data-i18n="[html]index.dao">DAO</div>
+                                            <div class="img-box">
+                                                <img src="./imgs/index/m/02_06.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col5" data-scroll-reveal="enter right move 30px over 1s after 0.05s">
+                                            <div class="p1" data-i18n="[html]index.power_shared">Power Shared <br> By All</div>
+                                            <div class="p2" data-i18n="[html]index.agile">Agile,Collaborative, <br> Diverse, Transparent</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="section345-box">
+                        <section class="section3 index-section3">
+                            <div class="section-inner ">
+                                <div class="inner-top aic">
+                                    <div class="carousel-list flex">
+                                        <div class="item">
+                                            <div class="img-box">
+                                                <img src="./imgs/index/03_02_01.png" alt="">
+                                            </div>
+                                            <div class="text-content">
+                                                <div data-i18n="[html]index.insights" class="title"></div>
+                                                <div data-i18n="[html]index.get_insights" class="p"></div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="img-box">
+                                                <img src="./imgs/index/03_02_02.png" alt="">
+                                            </div>
+                                            <div class="text-content">
+                                                <div data-i18n="[html]index.learning" class="title"></div>
+                                                <div data-i18n="[html]index.get_the" class="p"></div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="img-box">
+                                                <img src="./imgs/index/03_02_03.png" alt="">
+                                            </div>
+                                            <div class="text-content">
+                                                <div data-i18n="[html]index.investment_simp" class="title"></div>
+                                                <div data-i18n="[html]index.invest_crypto" class="p"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  <div class="fl">
+                                        <el-carousel @change="onCarouselChange" indicator-position="none" ref="el_carousel" arrow="never" :autoplay="autoplay" >
+                                            <el-carousel-item>
+                                                <div class="img-box">
+                                                    <img src="./imgs/index/03_02_01.png" alt="">
+                                                </div>
+                                            </el-carousel-item>
+                                            <el-carousel-item>
+                                                <div class="img-box">
+                                                    <img src="./imgs/index/03_02_02.png" alt="">
+                                                </div>
+                                            </el-carousel-item>
+                                            <el-carousel-item>
+                                                <div class="img-box">
+                                                    <img src="./imgs/index/03_02_03.png" alt="">
+                                                </div>
+                                            </el-carousel-item>
+                                        </el-carousel>
+                                    </div>
+                                    <div class="fr">
+                                        <div class="list">
+                                            <div class="item aic" @mouseleave="onCarouseLeave" @mouseover="changeCarousel(0)" :class="{'ac':carouselIndex==0}">
+                                                <div class="img-box">
+                                                    <img class="img1" src="./imgs/index/03_03.png" alt="">
+                                                    <img class="img2" src="./imgs/index/03_04.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <div class="content-title" data-scroll-reveal="enter right move 30px over 1s after 0.05s" data-i18n="[html]index.insights">Insights From Other Investors</div>
+                                                    <div class="p" data-scroll-reveal="enter right move 30px over 1s after 0.15s" data-i18n="[html]index.get_insights">Get insights, Share Knowledge, and view content revelent to your portfolio and beyond</div>
+                                                </div>
+                                            </div>
+                                            <div class="item aic" @mouseleave="onCarouseLeave" @mouseover="changeCarousel(1)" :class="{'ac':carouselIndex==1}">
+                                                <div class="img-box">
+                                                    <img class="img1" src="./imgs/index/03_03.png" alt="">
+                                                    <img class="img2" src="./imgs/index/03_04.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <div class="content-title" data-scroll-reveal="enter right move 30px over 1s after 0.25s" data-i18n="[html]index.learning">Learning</div>
+                                                    <div class="p" data-scroll-reveal="enter right move 30px over 1s after 0.35s" data-i18n="[html]index.get_the">Get the latest blockchain information and news. Get support,provide feedback, ask anything about DAOs</div>
+                                                </div>
+                                            </div>
+                                            <div class="item aic" @mouseleave="onCarouseLeave" @mouseover="changeCarousel(2)" :class="{'ac':carouselIndex==2}">
+                                                <div class="img-box">
+                                                    <img class="img1" src="./imgs/index/03_03.png" alt="">
+                                                    <img class="img2" src="./imgs/index/03_04.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <div class="content-title" data-scroll-reveal="enter right move 30px over 1s after 0.45s" data-i18n="[html]index.investment_simp">Investment, Simplified</div>
+                                                    <div class="p" data-scroll-reveal="enter right move 30px over 1s after 0.55s" data-i18n="[html]index.invest_crypto">Invest crypto in minutes through bank transfer, cards, or mobile wallets online. Easy for every investor including crypto beginners.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="inner-bottom">
+                                    <div class="list fdc aic">
+                                        <div class="item item1 aic" data-scroll-reveal="enter bottom move 100px over 1s after 0.15s">
+                                            <div class="img-box">
+                                                <img src="./imgs/index/m/03_06.png" alt="">
+                                            </div>
+                                            <div class="fr fdc aic">
+                                                <div class="p1"><span id="dau">150000</span>+</div>
+                                                <div class="p2 aic jcc" data-i18n="[html]index.dau">DAU</div>
+                                            </div>
+                                        </div>
+                                        <div class="item item2 aic" data-scroll-reveal="enter bottom move 100px over 1s after 0.25s">
+                                            <div class="img-box">
+                                                <img src="./imgs/index/m/03_07.png" alt="">
+                                            </div>
+                                            <div class="fr fdc aic">
+                                                <div class="p1"><span id="ave">1700</span>M+</div>
+                                                <div class="p2 aic jcc" data-i18n="[html]index.ave">AVE DAILY INVESTMENT</div>
+                                            </div>
+                                        </div>
+                                        <div class="item item3 aic" data-scroll-reveal="enter bottom move 100px over 1s after 0.35s">
+                                            <div class="img-box">
+                                                <img src="./imgs/index/m/03_08.png" alt="">
+                                            </div>
+                                            <div class="fr fdc aic">
+                                                <div class="p1"><span id="total">500000</span>+</div>
+                                                <div class="p2 aic jcc" data-i18n="[html]index.total_registers">TOTAL REGISTERS</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section4">
+                            <div class="section-inner section-inner1">
+                                <div class="inner-top  fdc">
+                                    <div class="fl aic jcc">
+                                        <div class="col1 fdc aife">
+                                            <div class="p1">
+                                                <div class="img-box">
+                                                    <img src="./imgs/index/m/04_01.png" alt="">
+                                                </div>
+                                                <span class="text" data-scroll-reveal="enter left move 100px over 1s after 0.15s" data-i18n="[html]index.socialfi"> SocialFi </span>
+                                            </div>
+                                            <div class="p2"><span class="text" data-scroll-reveal="enter left move 100px over 1s after 0.25s" data-i18n="[html]index.community">Community</span></div>
+                                            <div class="p3"><span class="text" data-scroll-reveal="enter left move 100px over 1s after 0.35s" data-i18n="[html]index.investment">Investment</span></div>
+                                        </div>
+                                        <div class="col2">
+                                            <div class="img-box">
+                                                <img src="./imgs/index/m/04_02.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fr aic jcc">
+                                        <div class="p" data-i18n="[html]index.bit_store_empowers" data-scroll-reveal="enter right move 100px over 1s after 0.15s">Bit.Store empowers small investors to leverage social networks and interactive tools, to engage with other investors, indepently make informed investment choices, and share achievements. </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-inner section-inner2">
+                                <div class="img-box1" data-scroll-reveal="enter bottom move 100px over 1s after 0.15s">
+                                    <img src="./imgs/index/m/04_03.png" alt="">
+                                </div>
+                                <div class="img-box2" data-scroll-reveal="enter right move 100px over 1s after 0.15s">
+                                    <img src="./imgs/index/m/04_04.png" alt="">
+                                </div>
+                            </div>
+                            <div class="section-inner section-inner3">
+                                <div class="section-title" data-i18n="[html]index.why_bitstore" data-scroll-reveal="enter top move 50px over 1s after 0.15s">
+                                    Why <span class='c'>Bit.Store</span>
+                                </div>
+                                <div class="list aic jcsb fww">
+                                    <div class="item" data-scroll-reveal="enter top bottom 50px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/05_02.png" alt="">
+                                            <span class="text" data-i18n="index.socialization"></span>
+                                        </div>
+                                        <div class="p" data-i18n="index.users_create"></div>
+                                    </div>
+                                    <div class="item" data-scroll-reveal="enter top bottom 60px over 1s after 0.25s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/05_03.png" alt="">
+                                            <span class="text" data-i18n="index.simplicity"></span>
+                                        </div>
+                                        <div class="p" data-i18n="index.stellar"></div>
+                                    </div>
+                                    <div class="item" data-scroll-reveal="enter top bottom 70px over 1s after 0.35s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/05_04.png" alt="">
+                                            <span class="text" data-i18n="index.security"></span>
+                                        </div>
+                                        <div class="p" data-i18n="index.no_compromises"></div>
+                                    </div>
+                                    <div class="item" data-scroll-reveal="enter top bottom 80px over 1s after 0.45s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/05_05.png" alt="">
+                                            <span class="text" data-i18n="index.innovation"></span>
+                                        </div>
+                                        <div class="p" data-i18n="index.thinking_out"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <section class="section6">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]index.road_map" data-scroll-reveal="enter left move 50px over 1s after 0.15s">
+                                Road <span class='c'>Map</span>
+                            </div>
+                            <div class="img-box">
+                                <div class="row row1 jcsb">
+                                    <div class="col "></div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2021_Mar"></div>
+                                        <div class="col-content" data-i18n="index.2021_Mar_map"></div>
+                                    </div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2021_Jun"></div>
+                                        <div class="col-content" data-i18n="index.2021_Jun_map"></div>
+                                    </div>
+                                </div>
+                                <div class="row row2 jcsb">
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2022_Feb"></div>
+                                        <div class="col-content" data-i18n="index.2022_Feb_map"></div>
+                                    </div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2021_Sep"></div>
+                                        <div class="col-content" data-i18n="index.2021_Sep_map"></div>
+                                    </div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2021_Jul"></div>
+                                        <div class="col-content" data-i18n="index.2021_Jul_map"></div>
+                                    </div>
+                                </div>
+                                <div class="row row3 jcsb">
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2022_Mar"></div>
+                                        <div class="col-content" data-i18n="index.2022_Mar_map"></div>
+                                    </div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2022_Apr"></div>
+                                        <div class="col-content" data-i18n="index.2022_Apr_map"></div>
+                                    </div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2022_Q3"></div>
+                                        <div class="col-content" data-i18n="index.2022_Q3_map"></div>
+                                    </div>
+                                </div>
+                                <div class="row row4 jcsb">
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                    </div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2023_Q1"></div>
+                                        <div class="col-content" data-i18n="index.2023_Q1_map"></div>
+                                    </div>
+                                    <div class="col " data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="col-title" data-i18n="index.2022_Q4"></div>
+                                        <div class="col-content" data-i18n="index.2022_Q4_map"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section7">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]index.we_are" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                We Are Committed To Building The World's First <br> One-Stop <span class='c'>Crypto Investment DAO</span>
+                            </div>
+                            <div class="img-box" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                <img src="./imgs/index/07_01.png" alt="">
+                            </div>
+                            <div class="p" data-i18n="[html]index.empowers_small" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">Bit.Store empowers small investors to leverage social networks and <br>interactive tools, to engage with other investors, indepently make <br> informed investment choices, and share achievements.
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section8">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]index.our_token" data-scroll-reveal="enter right move 50px over 1s after 0.15s">
+                                Our <span class='c'>Token</span>
+                            </div>
+                            <div class="section-body">
+                                <div class="p" data-i18n="[html]index.click_on" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">Click On Each Logo To Buy <span class="c"> Bit.Store (STORE) </span> On Any Of These Exchanges</div>
+                                <div class="list  aic jcsb fww">
+                                    <a href="https://pancakeswap.finance/swap?outputCurrency=0x65d9033cff96782394dab5dbef17fa771bbe1732" target="_blank" class="item" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/08_01.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/m/08_08.png" alt="">
+                                        </span>
+                                    </a>
+                                    <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x31ea0de8119307aa264bb4b38727aab4e36b074f&chain=mainnet" target="_blank" class="item" data-scroll-reveal="enter bottom move 60px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/08_02.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/m/08_08.png" alt="">
+                                        </span>
+                                    </a>
+                                    <a href="https://www.huobi.com/en-us/exchange/store_usdt/" target="_blank" class="item" data-scroll-reveal="enter bottom move 70px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/08_03.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/m/08_08.png" alt="">
+                                        </span>
+                                    </a>
+                                    <a href="https://www.mexc.com/zh-CN/exchange/STORE_USDT" target="_blank" class="item" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/08_04.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/m/08_08.png" alt="">
+                                        </span>
+                                    </a>
+                                    <a href="https://www.bitwellex.com/trade/spot/STORE_USDT" target="_blank" class="item" data-scroll-reveal="enter bottom move 90px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/08_05.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/m/08_08.png" alt="">
+                                        </span>
+                                    </a>
+                                    <a href="https://www.gateio.tv/cn/trade/STORE_USDT" target="_blank" class="item" data-scroll-reveal="enter bottom move 100px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/08_06.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/m/08_08.png" alt="">
+                                        </span>
+                                    </a>
+                                    <a href="https://www.bitmart.com/trade/en?layout=basic&symbol=STORE_USDT" target="_blank" class="item" data-scroll-reveal="enter bottom move 110px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/08_07.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/m/08_08.png" alt="">
+                                        </span>
+                                    </a>
+                                    <a href="https://www.kucoin.com/trade/STORE-USDT" target="_blank" class="item" data-scroll-reveal="enter bottom move 110px over 1s after 0.15s">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/08_08_01.png" alt="">
+                                        </div>
+                                        <span class="item-b aic jcc">
+                                            <span class="text" data-i18n="index.store">Store</span>
+                                            <img src="./imgs/index/m/08_08.png" alt="">
+                                        </span>
+                                    </a>
+                                    <div class="item"></div>
+                                </div>
+                                <div class="row bt ">
+                                    <div class="col flex" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <img src="./imgs/index/m/08_09.png" alt="">
+                                        <span class="text" data-i18n="[html]index.get_airdrop">Get Bit.Store Airdrop</span>
+                                    </div>
+                                    <div class="col flex" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <img src="./imgs/index/m/08_09.png" alt="">
+                                        <span class="text" data-i18n="[html]index.get_proportional">Get Proportional Voting Rights</span>
+                                    </div>
+                                    <div class="col flex" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <img src="./imgs/index/m/08_09.png" alt="">
+                                        <span class="text" data-i18n="[html]index.qualification">Qualification Of Joining Some VIP Group</span>
+                                    </div>
+                                    <div class="col flex" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                        <img src="./imgs/index/m/08_09.png" alt="">
+                                        <span class="text" data-i18n="[html]index.level_up">Level Up Your Badge To Earn More</span>
+                                    </div>
+                                </div>
+                                <div class="come-soon" data-i18n="[html]index.come_soon" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">Come Soon</div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section9">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]index.our_partners" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                Our <span class='c'>Partners</span>
+                            </div>
+                            <div class="list" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                <div class="row aic  jcsb" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/09_01.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/09_02.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/09_03.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row aic  jcsb" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/09_04.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/09_05.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/09_06.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row aic  jcsb" data-scroll-reveal="enter bottom move 100px over 1s after 0.15s">
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/09_07.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/09_08.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/09_09.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row aic  jcsb" data-scroll-reveal="enter bottom move 120px over 1s after 0.15s">
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/09_10.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/09_11.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/09_12.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row aic  jcsb" data-scroll-reveal="enter bottom move 120px over 1s after 0.15s">
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/09_13.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/09_14.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-box">
+                                            <img src="./imgs/index/m/09_15.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section10">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]index.media_release" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                Media <span class='c'>Release</span>
+                            </div>
+                            <div class="list aic jcsb fww">
+                                <div class="item fdc aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.15s">
+                                    <a target="_blank" href="https://www.prnewswire.com/news-releases/bitstore-launches-liquidity-pools-in-partnership-with-encentiveio-301508847.html" class="img-box">
+                                        <img src="./imgs/index/m/10_01.png" alt="">
+                                    </a>
+                                    <a target="_blank" href="https://www.prnewswire.com/news-releases/bitstore-launches-liquidity-pools-in-partnership-with-encentiveio-301508847.html" class="text toe">https://www.prnewswire.com/news-releases/bitstore-launches-liquidity-pools-in-partnership-with-encentiveio-301508847.html </a>
+                                </div>
+                                <div class="item fdc aic" data-scroll-reveal="enter bottom move 90px over 1s after 0.15s">
+                                    <a target="_blank" href="https://finance.yahoo.com/news/socialfi-investment-platform-bit-store-042700661.html" class="img-box">
+                                        <img src="./imgs/index/m/10_02.png" alt="">
+                                    </a>
+                                    <a target="_blank" href="https://finance.yahoo.com/news/socialfi-investment-platform-bit-store-042700661.html" class="text toe">https://finance.yahoo.com/news/socialfi-investment-platform-bit-store-042700661.html</a>
+                                </div>
+                                <div class="item fdc aic" data-scroll-reveal="enter bottom move 100px over 1s after 0.15s">
+                                    <a target="_blank" href="https://www.timesnewswire.com/pressrelease/bit-storea-socialfi-investment-platform-to-list-on-bitmart-exchange/" class="img-box">
+                                        <img src="./imgs/index/m/10_03.png" alt="">
+                                    </a>
+                                    <a target="_blank" href="https://www.timesnewswire.com/pressrelease/bit-storea-socialfi-investment-platform-to-list-on-bitmart-exchange/" class="text toe">https://www.timesnewswire.com/pressrelease/bit-storea-socialfi-investment-platform-to-list-on-bitmart-exchange/ </a>
+                                </div>
+                                <div class="item fdc aic" data-scroll-reveal="enter bottom move 110px over 1s after 0.15s">
+                                    <a target="_blank" href="https://bitcoinist.com/social-cryptocurrency-investment-platform-bit-store-launches-crypto-linked-card/" class="img-box">
+                                        <img src="./imgs/index/m/10_04.png" alt="">
+                                    </a>
+                                    <a target="_blank" href="https://bitcoinist.com/social-cryptocurrency-investment-platform-bit-store-launches-crypto-linked-card/" class="text toe">https://bitcoinist.com/social-cryptocurrency-investment-platform-bit-store-launches-crypto-linked-card/</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section11">
+                        <div class="section-inner">
+                            <div class="p1" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s" data-i18n="[html]index.slogan1">Explore Your Crypto Journey with Bit.Store <br>
+                                and Grow Your Portfolio with Ease</div>
+                            <div class="p2" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s" data-i18n="[html]index.slogan2">Store, Trade, And Earn With Top Cryptocurrencies In Minutes.</div>
+                            <div class="p3 aic jcc">
+                                <a href="./downloadguide.html" class="p3-inner aic jcc" data-scroll-reveal="enter bottom move 50px over 1s after 0.15s">
+                                    <img src="./imgs/index/m/11_02.png" alt="">
+                                    <span class="text" data-i18n="[html]index.get_app">Get the APP</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="fixed-links flex fdc aife">
+                        <a href="https://twitter.com/www_bit_store" target="_blank" class="twitter"><img src="./imgs/index/m/tw.png" alt=""></a>
+                        <a href="https://t.me/Bitstore_official" target="_blank" class="telegram"><img src="./imgs/index/m/tg.png" alt=""></a>
+                        <a href="./downloadguide.html" class="download"><img src="./imgs/index/m/download.png" alt=""></a>
+                    </section>
+                </template>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/i18next.min.js"></script>
+<script src="./js/jquery-i18next.min.js"></script>
+<script src="./js/i18nextHttpBackend.min.js"></script>
+<script src="./js/i18nextBrowserLanguageDetector.min.js"></script>
+<script src="./libs/vue/vue.js"></script>
+<script src="./libs/element-ui/index.js"></script>
+<script src="./js/scrollReveal.js"></script>
+<script src="./js/common.js?v=1653632093238"></script>
+
+</html>

@@ -1,0 +1,199 @@
+@font-face {
+    font-family: "SFPro-Semibold";
+    src: url(../../font/SF-Pro-Display-Semibold.otf);
+}
+
+@font-face {
+    font-family: "SFPro-Light";
+    src: url(../../font/SF-Pro-Display-Light.otf);
+}
+
+@font-face {
+    font-family: "SFPro-Black";
+    src: url(../../font/SF-Pro-Display-Black.otf);
+}
+
+@font-face {
+    font-family: "SFPro-Heavy";
+    src: url(../../font/SF-Pro-Display-Heavy.otf);
+}
+
+@font-face {
+    font-family: "SFPro-Medium";
+    src: url(../../font/SF-Pro-Display-Medium.otf);
+}
+
+@font-face {
+    font-family: "SFPro-Regular";
+    src: url(../../font/SF-Pro-Display-Regular.otf);
+}
+
+@font-face {
+    font-family: "SFPro";
+    src: url(../../font/SF-Pro-Display-Regular.otf);
+}
+
+body {
+    font-family: SFPro;
+}
+
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    /* -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;*/
+}
+
+a {
+    text-decoration: none;
+
+    &>img {
+        display: block;
+    }
+}
+
+
+.flex {
+    display: flex
+}
+
+.f1 {
+    flex: 1
+}
+
+.f2 {
+    flex: 2
+}
+
+.jcfs {
+    .flex;
+    justify-content: flex-start
+}
+
+.jcfe {
+    .flex;
+
+    justify-content: flex-end
+}
+
+.jcc {
+    .flex;
+
+    justify-content: center
+}
+
+.jcsb {
+    .flex;
+
+    justify-content: space-between
+}
+
+
+.jcsa {
+    .flex;
+
+    justify-content: space-around
+}
+
+.jcse {
+    .flex;
+
+    justify-content: space-evenly
+}
+
+.aifs {
+    .flex;
+
+    align-items: flex-start
+}
+
+.aic {
+    .flex;
+
+    align-items: center
+}
+
+.asc {
+    .flex;
+
+    align-self: center
+}
+
+.asfe {
+    .flex;
+
+    align-self: flex-end
+}
+
+.aife {
+    .flex;
+
+    align-items: flex-end
+}
+
+.fww {
+    .flex;
+
+    flex-wrap: wrap
+}
+
+.fdc {
+    .flex;
+
+    flex-direction: column
+}
+
+.tac {
+    text-align: center
+}
+
+.toe {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%
+}
+
+.toe2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2
+}
+
+.toe3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3
+}
+
+.p-c {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    line-height: normal
+}
+
+.fz0 {
+    font-size: 0;
+    -webkit-text-size-adjust: none
+}
+
+
+.w0 {
+    width: 0 !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+
+
+@media (max-width: 1125px) {}

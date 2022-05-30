@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imgs/favicon.png" type="image/png">
+    <title>Bit.Store</title>
+    <link rel="stylesheet" href="./libs/element-ui/index.css">
+    <link rel="stylesheet" href="./css/common/index.css?v=1653632093238">
+    <link rel="stylesheet" href="./css/downloadguide.css?v=1653632093238">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z629QNGNF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-2Z629QNGNF');
+    </script>
+</head>
+
+<body>
+    <div id="app" v-cloak :class="{pc:isPc,mobile:!isPc}">
+        <div class="page-body">
+            <div class="page-body-inner">
+                <template class="pc_temp" v-if="isPc">
+                    <section class="section">
+                        <div class="section-inner">
+                            <div class="section-title aic">
+                                <div class="img-box" data-scroll-reveal="enter left move 80px over 1s after 0.05s">
+                                    <img src="./imgs/download/01.png" alt="">
+                                </div>
+                                <div class="fr">
+                                    <div class="p1" data-scroll-reveal="enter right move 80px over 1s after 0.05s" data-i18n="[html]download.bitstore">Bit.Store</div>
+                                    <div class="p2" data-scroll-reveal="enter right move 80px over 1s after 0.05s" data-i18n="[html]download.the_web3">The Web 3.0 Social Investment DAO Platform</div>
+                                </div>
+                            </div>
+                            <div class="section-body aic jcsb">
+                                <div class="fl">
+                                    <div class="tabs">
+                                        <div class="tabs-header aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.05s">
+                                            <div class="tab-item aic jcc" :class="{'ac':downloadType==1}" @click="switchDownLoadType(1)">
+                                                <img src="./imgs/download/03.png" alt="">
+                                                <span class="text" data-i18n="[html]download.ios">IOS</span>
+                                            </div>
+                                            <div class="tab-item aic jcc" :class="{'ac':downloadType==2}" @click="switchDownLoadType(2)">
+                                                <img src="./imgs/download/04.png" alt="">
+                                                <span class="text" data-i18n="[html]download.android">Android</span>
+                                            </div>
+                                            <div class="tab-item aic jcc" :class="{'ac':downloadType==3}" @click="switchDownLoadType(3)">
+                                                <img src="./imgs/download/05.png" alt="">
+                                                <span class="text" data-i18n="[html]download.google_play">Google Play</span>
+                                                <div class="indonisia">
+                                                    <span class="t" data-i18n="[html]download.indonisia_only">Indonisia only</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs-body" data-scroll-reveal="enter bottom move 80px over 1s after 0.05s">
+                                            <img src="./imgs/download/10.png" alt="" class="ios" :class="{'ac':downloadType==1}">
+                                            <img src="./imgs/download/11.png" alt="" class="android" :class="{'ac':downloadType==2}">
+                                            <img src="./imgs/download/12.png" alt="" class="google-play" :class="{'ac':downloadType==3}">
+                                            <div class="text" data-i18n="[html]download.scan_qr">
+                                                Scan QR code and Download
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="copy aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.05s" :class="{'show':downloadType==1||downloadType==2}">
+                                        <div class="val f1 aic">https://app.bit.store/bitStore-gateway/share/shareApp</div>
+                                        <div id="copy_btn" class="btn jcc aic" data-clipboard-text="https://app.bit.store/bitStore-gateway/share/shareApp">Copy</div>
+                                    </div>
+                                </div>
+                                <div class="fr" data-scroll-reveal="enter bottom move 80px over 1s after 0.05s">
+                                    <div class="img-box">
+                                        <img src="./imgs/download/09.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </template>
+                <template class="mobile_temp" v-else>
+                    <section class="section">
+                        <div class="section-inner">
+                            <div class="section-title aic">
+                                <div class="img-box" data-scroll-reveal="enter left move 80px over 1s after 0.05s">
+                                    <img src="./imgs/download/m/01.png" alt="">
+                                </div>
+                                <div class="fr f1">
+                                    <div class="p1" data-scroll-reveal="enter right move 80px over 1s after 0.05s" data-i18n="[html]download.bitstore">Bit.Store</div>
+                                    <div class="p2" data-scroll-reveal="enter right move 80px over 1s after 0.05s" data-i18n="[html]download.the_web3">The Web 3.0 Social Investment DAO Platform</div>
+                                </div>
+                            </div>
+                            <div class="section-body fdc aic">
+                                <div class="fr" data-scroll-reveal="enter bottom move 80px over 1s after 0.05s">
+                                    <div class="img-box">
+                                        <img src="./imgs/download/m/09.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="fl">
+                                    <div class="tabs">
+                                        <div class="tabs-header aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.05s">
+                                            <div class="tab-item aic jcc" :class="{'ac':downloadType==1}" @click="switchDownLoadType(1)">
+                                                <img src="./imgs/download/m/03.png" alt="">
+                                                <span class="text" data-i18n="[html]download.ios">IOS</span>
+                                            </div>
+                                            <div class="tab-item aic jcc" :class="{'ac':downloadType==2}" @click="switchDownLoadType(2)">
+                                                <img src="./imgs/download/m/04.png" alt="">
+                                                <span class="text" data-i18n="[html]download.android">Android</span>
+                                            </div>
+                                            <div class="tab-item aic jcc" :class="{'ac':downloadType==3}" @click="switchDownLoadType(3)">
+                                                <img src="./imgs/download/m/05.png" alt="">
+                                                <span class="text" data-i18n="[html]download.google_play">Google Play</span>
+                                                <div class="indonisia">
+                                                    <span class="t" data-i18n="[html]download.indonisia_only">Indonisia only</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs-body" data-scroll-reveal="enter bottom move 80px over 1s after 0.05s">
+                                            <img src="./imgs/download/10.png" alt="" class="ios" :class="{'ac':downloadType==1}">
+                                            <img src="./imgs/download/11.png" alt="" class="android" :class="{'ac':downloadType==2}">
+                                            <img src="./imgs/download/12.png" alt="" class="google-play" :class="{'ac':downloadType==3}">
+                                            <div class="text" data-i18n="[html]download.scan_qr">
+                                                Scan QR code and Download
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="copy aic" data-scroll-reveal="enter bottom move 80px over 1s after 0.05s" :class="{'show':downloadType==1||downloadType==2}">
+                                        <div class="val aic">https://app.bit.store/bitStore-gateway/share/shareApp</div>
+                                        <div id="copy_btn" class="btn jcc aic" data-clipboard-text="https://app.bit.store/bitStore-gateway/share/shareApp">Copy</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </template>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/i18next.min.js"></script>
+<script src="./js/jquery-i18next.min.js"></script>
+<script src="./js/i18nextHttpBackend.min.js"></script>
+<script src="./js/i18nextBrowserLanguageDetector.min.js"></script>
+<script src="./libs/vue/vue.js"></script>
+<script src="./libs/element-ui/index.js"></script>
+<script src="./js/scrollReveal.js"></script>
+<script src="./js/clipboard.min.js"></script>
+<script src="./js/common.js?v=1653632093238"></script>
+
+</html>

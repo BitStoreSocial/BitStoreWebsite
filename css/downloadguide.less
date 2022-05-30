@@ -1,0 +1,435 @@
+#app.pc {
+    .page-body {
+        .page-body-inner {
+            background: #F6F6F6;
+            padding: .3rem 1.6rem 0;
+
+            section {
+                overflow: hidden;
+
+                .section-inner {
+                    position: relative;
+                    z-index: 2;
+                }
+
+                &.section {
+                    width: 100%;
+                    padding: .7rem 0 1.5rem;
+                    background: #FFFFFF;
+                    border-radius: .3rem .3rem 0px 0px;
+
+                    .section-inner {
+                        width: 14.16rem;
+                        padding-left: .62rem;
+                        margin: 0 auto;
+
+                        .section-title {
+                            margin-bottom: 0.84rem;
+
+                            .img-box {
+                                width: 1.1rem;
+                                height: 1.1rem;
+                                margin-right: .5rem;
+
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .fr {
+                                font-size: .5rem;
+                                font-family: SFPro-Heavy, SFPro;
+                                font-weight: 800;
+                                color: #FFD000;
+                                line-height: .6rem;
+
+                                .p1 {}
+
+                                .p2 {
+                                    color: #090909;
+                                }
+                            }
+                        }
+
+                        .section-body {
+                            .fl {
+                                .tabs {
+                                    margin-bottom: .2rem;
+
+                                    .tabs-header {
+                                        background: #FFFFFF;
+                                        border-radius: .4rem;
+                                        border: 1px solid #FFD000;
+                                        margin-bottom: .3rem;
+                                        // overflow: hidden;
+
+                                        .tab-item {
+                                            width: 2.1rem;
+                                            position: relative;
+                                            height: .8rem;
+                                            cursor: pointer;
+
+                                            &:first-child {
+                                                border-radius: .4rem 0 0 .4rem;
+                                            }
+
+                                            &.ac {
+                                                background: #FFD000;
+                                            }
+
+                                            &:not(:last-child) {
+                                                border-right: 1px solid #ffD000;
+                                            }
+
+                                            img {
+                                                height: .28rem;
+                                                width: auto;
+                                                margin-right: .1rem;
+                                            }
+
+                                            .text {
+                                                font-size: .24rem;
+                                                font-family: SFPro-Semibold, SFPro;
+                                                font-weight: 600;
+                                                color: #000000;
+                                                line-height: .4rem;
+                                                white-space: nowrap;
+                                            }
+
+                                            .indonisia {
+                                                position: absolute;
+                                                width: 1.3rem;
+                                                height: .56rem;
+                                                background: url(../imgs/download/02.png);
+                                                background-size: contain;
+                                                text-align: center;
+                                                left: 50%;
+                                                transform: translate(-50%, -100%);
+                                                top: 0;
+                                                cursor: default;
+
+                                                .t {
+                                                    font-size: .18rem;
+                                                    font-family: SFPro-Regular, SFPro;
+                                                    font-weight: 400;
+                                                    color: #000000;
+                                                    line-height: .34rem;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .tabs-body {
+                                        width: 6.22rem;
+                                        height: 6.22rem;
+                                        background: #F6F6F6;
+                                        padding-top: .4rem;
+
+                                        img {
+                                            width: 5rem;
+                                            height: 5rem;
+                                            margin: 0 auto .2rem;
+                                            display: none;
+
+                                            &.ac {
+                                                display: block;
+
+                                            }
+                                        }
+
+                                        .text {
+                                            font-size: .28rem;
+                                            font-family: SFPro-Light, SFPro;
+                                            font-weight: 300;
+                                            color: #000000;
+                                            line-height: .34rem;
+                                            text-align: center;
+                                        }
+
+                                    }
+                                }
+
+                                .copy {
+
+                                    width: 6.23rem; // 623px;
+                                    height: .74rem;
+                                    background: #F6F6F6;
+                                    border-radius: .1rem;
+                                    opacity: 0;
+
+                                    &.show {
+                                        opacity: 1;
+                                    }
+
+                                    .val {
+                                        font-size: .2rem; // 20px;
+                                        font-family: SFPro-Light, SFPro;
+                                        font-weight: 300;
+                                        color: #232323;
+                                        line-height: .24rem;
+                                        white-space: nowrap;
+                                        padding-left: .2rem;
+                                    }
+
+                                    .btn {
+                                        font-size: .2rem;
+                                        font-family: SFPro-Medium, SFPro;
+                                        font-weight: 500;
+                                        color: #232323;
+                                        line-height: .24rem;
+                                        width: 1.24rem; // 124px;
+                                        height: .74rem;
+                                        background: #FFD000;
+                                        border-radius: 0px .1rem .1rem 0px;
+                                        cursor: pointer;
+
+                                        &:active {
+                                            background: #ddd;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .fr {
+                                .img-box {
+                                    width: 6.32rem;
+                                    height: 8.09rem;
+
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}
+
+#app.mobile {
+    .page-body {
+        .page-body-inner {
+
+            section {
+                overflow: hidden;
+
+                .section-inner {
+                    position: relative;
+                    z-index: 2;
+                }
+
+                &.section {
+                    padding: .76923077rem .51282051rem 2.56410256rem;
+
+                    .section-inner {
+                        .section-title {
+                            margin-bottom: 1.12820513rem;
+
+                            .img-box {
+                                width: 2.05128205rem;
+                                height: 2.05128205rem;
+                                margin-right: .51282051rem;
+
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .fr {
+                                font-size: .76923077rem;
+                                font-family: SFPro-Heavy, SFPro;
+                                font-weight: 800;
+                                color: #FFD000;
+                                line-height: .92307692rem;
+
+                                .p1 {}
+
+                                .p2 {
+                                    font-size: .51282051rem;
+                                    color: #090909;
+                                }
+                            }
+                        }
+
+                        .section-body {
+                            .fr {
+                                margin-bottom: 1.12820513rem;
+
+                                .img-box {
+                                    width: 5.64102564rem;
+                                    height: 7.23076923rem;
+
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+
+                                    }
+                                }
+                            }
+
+                            .fl {
+                                .tabs {
+                                    margin-bottom: .51282051rem;
+
+                                    .tabs-header {
+                                        background: #FFFFFF;
+                                        border-radius: 1.02564103rem;
+                                        border: 1px solid #FFD000;
+                                        margin-bottom: .51282051rem;
+
+                                        // overflow: hidden;
+
+                                        .tab-item {
+                                            width: 2.97435897rem;
+                                            position: relative;
+                                            height: 1.28205128rem;
+                                            cursor: pointer;
+
+                                            &:first-child {
+                                                border-radius: 1.02564103rem 0 0 1.02564103rem;
+                                            }
+
+                                            &.ac {
+                                                background: #FFD000;
+                                            }
+
+                                            &:not(:last-child) {
+                                                border-right: 1px solid #ffD000;
+                                            }
+
+                                            img {
+                                                height: .41025641rem;
+                                                width: auto;
+                                                margin-right: .15384615rem;
+                                            }
+
+                                            .text {
+                                                font-size: .30769231rem;
+                                                font-family: SFPro-Semibold, SFPro;
+                                                font-weight: 600;
+                                                color: #000000;
+                                                line-height: .43589744rem;
+                                                white-space: nowrap;
+                                            }
+
+                                            .indonisia {
+                                                position: absolute;
+                                                width: 1.66666667rem;
+                                                height: .71794872rem;
+                                                background: url(../imgs/download/m/02.png);
+                                                background-size: contain;
+                                                text-align: center;
+                                                left: 50%;
+                                                transform: translate(-50%, -100%);
+                                                top: 0;
+                                                cursor: default;
+
+                                                .t {
+                                                    font-size: .20512821rem;
+                                                    font-family: SFPro-Regular, SFPro;
+                                                    font-weight: 400;
+                                                    color: #000000;
+                                                    line-height: .25641026rem;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .tabs-body {
+                                        width: 8.97435897rem;
+                                        height: 8.97435897rem;
+                                        background: #F6F6F6;
+                                        padding-top: .76923077rem;
+
+                                        img {
+                                            width: 6.92307692rem;
+                                            height: 6.92307692rem;
+                                            margin: 0 auto .25641026rem;
+                                            display: none;
+
+                                            &.ac {
+                                                display: block;
+
+                                            }
+                                        }
+
+                                        .text {
+                                            font-size: .41025641rem;
+                                            font-family: SFPro-Light, SFPro;
+                                            font-weight: 300;
+                                            color: #000000;
+                                            line-height: .48717949rem;
+                                            text-align: center;
+                                        }
+
+                                    }
+                                }
+
+                                .copy {
+
+                                    width: 8.97435897rem;
+                                    height: 1.41025641rem;
+                                    background: #F6F6F6;
+                                    border-radius: .25641026rem;
+                                    opacity: 0;
+
+                                    &.show {
+                                        opacity: 1;
+                                    }
+
+                                    .val {
+                                        font-size: .30769231rem; // 20px;
+                                        font-family: SFPro-Light, SFPro;
+                                        font-weight: 300;
+                                        color: #232323;
+                                        line-height: .56410256rem;
+                                        white-space: nowrap;
+                                        padding: 0 .51282051rem;
+                                        word-break: break-all;
+                                        width: 6.84615385rem;
+                                        white-space: break-spaces;
+                                    }
+
+                                    .btn {
+                                        font-size: .41025641rem;
+                                        font-family: SFPro-Medium, SFPro;
+                                        font-weight: 500;
+                                        color: #232323;
+                                        line-height: .48717949rem;
+                                        width: 2.12820513rem; // 124px;
+                                        height: 100%;
+                                        background: #FFD000;
+                                        border-radius: 0px .25641026rem .25641026rem 0px;
+                                        cursor: pointer;
+
+                                        &:active {
+                                            background: #ddd;
+                                        }
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}

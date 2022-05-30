@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imgs/favicon.png" type="image/png">
+    <title>Bit.Store</title>
+    <link rel="stylesheet" href="./libs/element-ui/index.css">
+    <link rel="stylesheet" href="./css/common/index.css?v=1653632093238">
+    <link rel="stylesheet" href="./css/faq.css?v=1653632093238">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z629QNGNF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-2Z629QNGNF');
+    </script>
+</head>
+
+<body>
+    <div id="app" v-cloak :class="{pc:isPc,mobile:!isPc}">
+        <div class="page-body">
+            <div class="page-body-inner">
+                <template class="pc_temp" v-if="isPc">
+                    <section class="section">
+                        <div class="section-inner">
+                            <div class="section-title" data-i18n="[html]faq.questions">
+                                Commonly <span class='c'> Asked Questions</span>
+                            </div>
+                            <div class="section-body">
+                                <el-tabs tab-position="left">
+                                    <el-tab-pane>
+                                        <span slot="label">
+                                            <span class="text" data-i18n="[html]faq.general"></span>
+                                            <span class="text">[5]</span>
+                                        </span>
+                                        <el-collapse>
+                                            <el-collapse-item name="1">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question1_1">How do I install the Bit.Store App?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer1_1">Please refer to the installation tutorial here <a href="https://app.bit.store/bitStore-gateway/share/shareApp"> https://app.bit.store/bitStore-gateway/share/shareApp </a>for both Apple and Android devices.</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="2">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question1_2">Which countries/regions is Bit.Store available in?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer1_2">Bit.Store is currently available in Indonesia, United Kindom, Hong Kong, Japan, Australia, Canada, and will be soon launched in many other countries.</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="3">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question1_3">Is Bit.Store safe to use?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer1_3">Bit.Store provides world-class investment services and is licensed by regulators (or partnered with licensed institutions) in the countries it operates in. We strive to ensure our users invest with a peace of mind by working with leading 3rd-party asset custodians such as Coinbase and Cobo that will not only keep your assets safe, but also insure your investments in unlikely asset loss events such as hacks. Furthermore, Bit.Store works with renowned auditor, PricewaterhouseCoopers (PwC) to audit our users' assets on a quarter basis.</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="4">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question1_4">Is Bit.Store suitable for me?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer1_4">Bit.Store is designed to make digital asset investing simple. Whether you are a new or experienced crypto investor, our app enables you to invest in digital assets in just a few taps!</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="5">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question1_5">What is Bitcoin?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer1_5">Bitcoin (BTC) is a form of currency known as cryptocurrency and the first amongst its peers to attain widespread recognition and adoption owing its success to its decentralized ledger system and meteoric rises in price most notably in 2017 when it reached USD $19,783. Fractions of a coin can be traded and utilized up to a one to one hundred million ratio.</div>
+                                            </el-collapse-item>
+                                        </el-collapse>
+                                    </el-tab-pane>
+                                    <el-tab-pane>
+                                        <span slot="label">
+                                            <span class="text" data-i18n="[html]faq.trading">Trading</span>
+                                            <span class="text">[3]</span>
+                                        </span>
+                                        <el-collapse>
+                                            <el-collapse-item name="1">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question2_1">How are assets priced on Bit.Store?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer2_1">Bit.Store provides users with competitive asset prices by partnering with top crypto-exchanges such as Huobi and Binance and other over the counter exchanges. Having multiple sources for our digital assets allow our users to access real-time, optimal buy/sell prices.</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="2">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question2_2">Where does Bit.Store get its digital assets such as Bitcoin from?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer2_2">Bit.Store partners with top crypto-exchanges such as Huobi and Binance and other over the counter exchanges to bring you digital assets at the best prices and allows you to buy directly with familiar payment options such as bank cards, mobile wallets and bank transfers!</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="3">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question2_3">Supported payment method</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer2_3">Visa, Master Card</div>
+                                            </el-collapse-item>
+                                        </el-collapse>
+                                    </el-tab-pane>
+                                    <el-tab-pane>
+                                        <span slot="label">
+                                            <span class="text" data-i18n="[html]faq.withdrawals">Withdrawals</span>
+                                            <span class="text">[3]</span>
+                                        </span>
+                                        <el-collapse>
+                                            <el-collapse-item name="1">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question3_1">Can I send my invested assets to other platforms such as my crypto wallet?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer3_1">Bit.Store is a licensed and regulated institution that allow users to buy and sell digital assets directly with fiat. As such, we presently do not allow transfer of digital assets in/out of Bit.Store due to money laundering risks. However, users can sell their digital assets at anytime for withdrawal.</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="2">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question3_2">How can I withdraw my fiat balance after selling my invested assets?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer3_2">The proceeds from the sale of your digital assets will be directed to your account balance which can be withdrawn in a few methods (depending on country) as displayed in the app.+ How long does withdrawal take?</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="3">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question3_3">How long does withdrawal take?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer3_3">Withdrawals will be immediate with up to 2 hours in waiting time for large transactions</div>
+                                            </el-collapse-item>
+                                        </el-collapse>
+                                    </el-tab-pane>
+                                    <el-tab-pane>
+                                        <span slot="label">
+                                            <span class="text" data-i18n="[html]faq.fees">Fees</span>
+                                            <span class="text">[2]</span>
+                                        </span>
+                                        <el-collapse>
+                                            <el-collapse-item name="1">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question4_1">Does Bit.Store charge any fees?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer4_1"> Bit.Store does not charge any buying fees. However, relevant 3rd party fees may apply as charged by payment service providers (to support payments by credit card, virtual accounts and mobile wallets) and cryptocurrency suppliers (crypto-exchanges and OTCs).</div>
+                                                <div data-i18n="[html]faq.answer4_1_2"> Bit.Store charges a small fee for sell-transactions. This fee helps us to run our platform and provide our users with referral rewards. Find out how you can earn here! <a href="https://www.bit.store/bitstore/ReferEarn.html">https://www.bit.store/bitstore/ReferEarn.html</a> </div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="2">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question4_2">Are there any management fees for holding my investment with Bit.Store?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer4_2">Bit.Store does not charge any management fee nor any hidden fees.</div>
+                                            </el-collapse-item>
+                                        </el-collapse>
+                                    </el-tab-pane>
+                                    <el-tab-pane>
+                                        <span slot="label">
+                                            <span class="text" data-i18n="[html]faq.referral">Referral</span>
+                                            <span class="text">[2]</span>
+                                        </span>
+                                        <el-collapse>
+                                            <el-collapse-item name="1">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.questionr5_1">What referral programs do Bit.Store have?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer5_1">Bit.Store has two referral reward programs. Firstly, an invitation bonus which you earn for every user referred to the platform. Secondly, you earn a commission bonus of 0.2% on all buy-transactions made by users you refer. Find out more here! <a href="https://www.bit.store/bitstore/ReferEarn.html">[link]</a></div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="2">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.questionr5_2">How much can I make from these referral programs?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer5_2">The sky is the limit with our unlimited commission bonus! A referrer can earn more than 350USD weekly after referring ~50 active users.</div>
+                                            </el-collapse-item>
+                                        </el-collapse>
+                                    </el-tab-pane>
+                                </el-tabs>
+                            </div>
+                        </div>
+                    </section>
+                </template>
+                <template class="mobile_temp" v-else>
+                    <section class="section">
+                        <div class="section-inner">
+                            <div class="jcc-box jcc">
+                                <div class="section-title " data-i18n="[html]faq.questions">
+                                    Commonly <span class='c'> Asked Questions</span>
+                                </div>
+                            </div>
+                            <div class="section-body">
+                                <el-tabs tab-position="top">
+                                    <el-tab-pane>
+                                        <span slot="label">
+                                            <span class="text" data-i18n="[html]faq.general"></span>
+                                            <span class="text">[5]</span>
+                                        </span>
+                                        <el-collapse>
+                                            <el-collapse-item name="1">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/m/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/m/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question1_1">How do I install the Bit.Store App?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer1_1">Please refer to the installation tutorial here <a href="https://app.bit.store/bitStore-gateway/share/shareApp"> https://app.bit.store/bitStore-gateway/share/shareApp </a>for both Apple and Android devices.</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="2">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/m/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/m/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question1_2">Which countries/regions is Bit.Store available in?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer1_2">Bit.Store is currently available in Indonesia, United Kindom, Hong Kong, Japan, Australia, Canada, and will be soon launched in many other countries.</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="3">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/m/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/m/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question1_3">Is Bit.Store safe to use?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer1_3">Bit.Store provides world-class investment services and is licensed by regulators (or partnered with licensed institutions) in the countries it operates in. We strive to ensure our users invest with a peace of mind by working with leading 3rd-party asset custodians such as Coinbase and Cobo that will not only keep your assets safe, but also insure your investments in unlikely asset loss events such as hacks. Furthermore, Bit.Store works with renowned auditor, PricewaterhouseCoopers (PwC) to audit our users' assets on a quarter basis.</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="4">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/m/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/m/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question1_4">Is Bit.Store suitable for me?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer1_4">Bit.Store is designed to make digital asset investing simple. Whether you are a new or experienced crypto investor, our app enables you to invest in digital assets in just a few taps!</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="5">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/m/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/m/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question1_5">What is Bitcoin?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer1_5">Bitcoin (BTC) is a form of currency known as cryptocurrency and the first amongst its peers to attain widespread recognition and adoption owing its success to its decentralized ledger system and meteoric rises in price most notably in 2017 when it reached USD $19,783. Fractions of a coin can be traded and utilized up to a one to one hundred million ratio.</div>
+                                            </el-collapse-item>
+                                        </el-collapse>
+                                    </el-tab-pane>
+                                    <el-tab-pane>
+                                        <span slot="label">
+                                            <span class="text" data-i18n="[html]faq.trading">Trading</span>
+                                            <span class="text">[3]</span>
+                                        </span>
+                                        <el-collapse>
+                                            <el-collapse-item name="1">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/m/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/m/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question2_1">How are assets priced on Bit.Store?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer2_1">Bit.Store provides users with competitive asset prices by partnering with top crypto-exchanges such as Huobi and Binance and other over the counter exchanges. Having multiple sources for our digital assets allow our users to access real-time, optimal buy/sell prices.</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="2">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/m/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/m/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question2_2">Where does Bit.Store get its digital assets such as Bitcoin from?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer2_2">Bit.Store partners with top crypto-exchanges such as Huobi and Binance and other over the counter exchanges to bring you digital assets at the best prices and allows you to buy directly with familiar payment options such as bank cards, mobile wallets and bank transfers!</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="3">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/m/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/m/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question2_3">Supported payment method</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer2_3">Visa, Master Card</div>
+                                            </el-collapse-item>
+                                        </el-collapse>
+                                    </el-tab-pane>
+                                    <el-tab-pane>
+                                        <span slot="label">
+                                            <span class="text" data-i18n="[html]faq.withdrawals">Withdrawals</span>
+                                            <span class="text">[3]</span>
+                                        </span>
+                                        <el-collapse>
+                                            <el-collapse-item name="1">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/m/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/m/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question3_1">Can I send my invested assets to other platforms such as my crypto wallet?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer3_1">Bit.Store is a licensed and regulated institution that allow users to buy and sell digital assets directly with fiat. As such, we presently do not allow transfer of digital assets in/out of Bit.Store due to money laundering risks. However, users can sell their digital assets at anytime for withdrawal.</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="2">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/m/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/m/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question3_2">How can I withdraw my fiat balance after selling my invested assets?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer3_2">The proceeds from the sale of your digital assets will be directed to your account balance which can be withdrawn in a few methods (depending on country) as displayed in the app.+ How long does withdrawal take?</div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="3">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/m/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/m/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question3_3">How long does withdrawal take?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer3_3">Withdrawals will be immediate with up to 2 hours in waiting time for large transactions</div>
+                                            </el-collapse-item>
+                                        </el-collapse>
+                                    </el-tab-pane>
+                                    <el-tab-pane>
+                                        <span slot="label">
+                                            <span class="text" data-i18n="[html]faq.fees">Fees</span>
+                                            <span class="text">[2]</span>
+                                        </span>
+                                        <el-collapse>
+                                            <el-collapse-item name="1">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/m/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/m/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question4_1">Does Bit.Store charge any fees?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer4_1"> Bit.Store does not charge any buying fees. However, relevant 3rd party fees may apply as charged by payment service providers (to support payments by credit card, virtual accounts and mobile wallets) and cryptocurrency suppliers (crypto-exchanges and OTCs).</div>
+                                                <div data-i18n="[html]faq.answer4_1_2"> Bit.Store charges a small fee for sell-transactions. This fee helps us to run our platform and provide our users with referral rewards. Find out how you can earn here! <a href="https://www.bit.store/bitstore/ReferEarn.html">https://www.bit.store/bitstore/ReferEarn.html</a> </div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="2">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/m/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/m/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.question4_2">Are there any management fees for holding my investment with Bit.Store?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer4_2">Bit.Store does not charge any management fee nor any hidden fees.</div>
+                                            </el-collapse-item>
+                                        </el-collapse>
+                                    </el-tab-pane>
+                                    <el-tab-pane>
+                                        <span slot="label">
+                                            <span class="text" data-i18n="[html]faq.referral">Referral</span>
+                                            <span class="text">[2]</span>
+                                        </span>
+                                        <el-collapse>
+                                            <el-collapse-item name="1">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/m/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/m/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.questionr5_1">What referral programs do Bit.Store have?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer5_1">Bit.Store has two referral reward programs. Firstly, an invitation bonus which you earn for every user referred to the platform. Secondly, you earn a commission bonus of 0.2% on all buy-transactions made by users you refer. Find out more here! <a href="https://www.bit.store/bitstore/ReferEarn.html">[link]</a></div>
+                                            </el-collapse-item>
+                                            <el-collapse-item name="2">
+                                                <template slot="title">
+                                                    <img class="img1" src="./imgs/faq/m/01_01.png" alt="">
+                                                    <img class="img2" src="./imgs/faq/m/01_02.png" alt="">
+                                                    <span class="text" data-i18n="[html]faq.questionr5_2">How much can I make from these referral programs?</span>
+                                                </template>
+                                                <div data-i18n="[html]faq.answer5_2">The sky is the limit with our unlimited commission bonus! A referrer can earn more than 350USD weekly after referring ~50 active users.</div>
+                                            </el-collapse-item>
+                                        </el-collapse>
+                                    </el-tab-pane>
+                                </el-tabs>
+                            </div>
+                        </div>
+                    </section>
+                </template>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/i18next.min.js"></script>
+<script src="./js/jquery-i18next.min.js"></script>
+<script src="./js/i18nextHttpBackend.min.js"></script>
+<script src="./js/i18nextBrowserLanguageDetector.min.js"></script>
+<script src="./libs/vue/vue.js"></script>
+<script src="./libs/element-ui/index.js"></script>
+<script src="./js/scrollReveal.js"></script>
+<script src="./js/common.js?v=1653632093238"></script>
+
+</html>

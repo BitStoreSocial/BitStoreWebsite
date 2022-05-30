@@ -1,0 +1,953 @@
+#app.pc {
+
+    .page-header {
+        .page-header-inner {
+            .nav {
+                .link {
+                    .text {
+                        &.security {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .page-body {
+        .page-body-inner {
+            section {
+                overflow: hidden;
+                .section-inner {
+                    position: relative;
+                    z-index: 2;
+                }
+
+                &.section1 {
+                    height: 9.18rem;
+                    position: relative;
+                    background: #f9f9f9;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 4.4rem;
+                        height: 5.21rem;
+                        background: url(../imgs/security/01_03.png) no-repeat top center;
+                        background-size: contain;
+                        top: 1.28rem;
+                        left: 50%;
+                        transform: translateX(1.01rem);
+                    }
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 3.3rem;
+                        height: .1rem;
+                        background: url(../imgs/security/01_07.png) no-repeat top center;
+                        background-size: contain;
+                        top: 8.78rem;
+                        left: 50%;
+                        transform: translateX(4.7rem);
+                    }
+
+                    .section-inner {
+                        width: 13rem;
+                        margin: 0 auto;
+                        padding-top: .95rem;
+
+                        .section-title {
+                            font-size: .7rem;
+                            font-family: SFPro-Heavy, SFPro;
+                            font-weight: 800;
+                            color: #232323;
+                            line-height: .84rem;
+                            margin-bottom: .6rem;
+
+
+                            .c {
+                                color: #FFD000;
+                            }
+                        }
+
+                        .section-body {
+                            margin-bottom: .94rem;
+
+                            .fl {
+                                margin-right: .48rem;
+
+                                .img-box {
+                                    width: 2.7rem;
+                                    height: 2.7rem;
+
+                                    &:first-child {
+                                        margin-right: .3rem;
+                                    }
+
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+
+                            .fr {
+                                .p {
+                                    font-size: .28rem;
+                                    font-family: SFPro-Light, SFPro;
+                                    font-weight: 300;
+                                    color: #232323;
+                                    line-height: .41rem;
+                                    letter-spacing: 1px;
+
+                                    &:first-child {
+                                        margin-bottom: .3rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        .list {
+                            .item {
+                                .img-box {
+                                    width: .8rem;
+                                    height: .8rem;
+                                    margin-right: .4rem;
+                                    transition: all .3s;
+
+                                    &:hover {
+                                        transform: scale(1.1);
+                                    }
+
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+
+                                .text {
+                                    font-size: .28rem;
+                                    font-family: SFPro-Regular SFPro;
+                                    font-weight: 400;
+                                    color: #232323;
+                                    line-height: .34rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.section2 {
+                    height: 12.4rem;
+                    background: url(../imgs/security/02_01.png) no-repeat top center;
+                    background-size: contain;
+
+                    .section-inner {
+                        width: 13rem;
+                        margin: 0 auto;
+                        padding-top: 1.2rem;
+
+                        .section-title {
+                            font-size: .5rem;
+                            font-family: SFPro-Heavy, SFPro;
+                            font-weight: 800;
+                            color: #000000;
+                            line-height: .6rem;
+                            text-align: center;
+                            margin-bottom: .8rem;
+
+                            .c {
+                                color: #fff;
+                            }
+                        }
+
+                        .list {
+                            .item {
+                                margin: 0 .25rem .5rem 0;
+
+                                &:nth-of-type(5n) {
+                                    margin-right: 0;
+                                }
+
+                                &:nth-of-type(n+11) {
+                                    margin-bottom: 0;
+                                }
+
+                                .img-box {
+                                    width: 2.4rem;
+                                    height: 2.4rem;
+                                    transition: all .3s;
+
+                                    &:hover {
+                                        transform: scale(1.1);
+                                    }
+
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.section3 {
+                    height: 9.24rem;
+                    background: #F9F9F9;
+
+                    .section-inner {
+                        width: 15.22rem;
+                        margin: 0 auto;
+                        padding-top: 1.2rem;
+
+                        .section-title {
+                            font-size: .5rem;
+                            font-family: SFPro-Heavy, SFPro;
+                            font-weight: 800;
+                            color: #232323;
+                            line-height: .6rem;
+                            text-align: center;
+                            margin-bottom: .3rem;
+
+                            .c {
+                                color: #FFD000;
+                            }
+                        }
+
+                        .p {
+                            font-size: .28rem;
+                            font-family: SFPro-Regular SFPro;
+                            font-weight: 400;
+                            color: #232323;
+                            line-height: .34rem;
+                            text-align: center;
+                            margin-bottom: .79rem;
+                        }
+
+                        .list {
+                            .row {
+                                &:not(:last-child) {
+                                    margin-bottom: .78rem;
+                                }
+
+                                .item {
+                                    .img-box {
+                                        transition: all .3s;
+
+                                        &:hover {
+                                            transform: scale(1.1);
+                                        }
+
+                                        img {
+                                            display: block;
+                                            height: 1.02rem;
+                                            width: auto;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.section4 {
+                    .section-inner {
+                        width: 13.52rem;
+                        margin: 0 auto;
+                        padding-top: 1.5rem;
+
+                        .bg {
+                            width: 10.71rem;
+                            height: 10.07rem;
+                            background: url(../imgs/security/04_01.png) no-repeat top center;
+                            background-size: contain;
+                            position: relative;
+                            padding-top: 1.79rem;
+                            padding-right: 4.2rem;
+
+                            .p1 {
+                                width: 3.6rem;
+                                height: .94rem;
+                                background: #FFD000;
+                                font-size: .6rem;
+                                font-family: SFPro-Heavy, SFPro;
+                                font-weight: 800;
+                                color: #FFFFFF;
+                                line-height: .71rem;
+                                margin-bottom: .16rem;
+                            }
+
+                            .p2 {
+                                width: 5.48rem;
+                                height: 1.43rem;
+                                background: #000000;
+                                font-size: .5rem;
+                                font-family: SFPro-Heavy, SFPro;
+                                font-weight: 800;
+                                color: #FFD000;
+                                line-height: .6rem;
+                                text-align: right;
+                                margin-bottom: .2rem;
+                            }
+
+                            .p3 {
+                                margin-bottom: .17rem;
+
+                                img {
+                                    width: .3rem;
+                                    margin-right: .27rem;
+                                    height: auto;
+                                }
+
+                                .text {
+                                    min-width: 4.06rem;
+                                    font-size: .28rem;
+                                    font-family: SFPro-Regular SFPro;
+                                    font-weight: 400;
+                                    color: #000000;
+                                    line-height: .34rem;
+                                    letter-spacing: 1px;
+                                    // text-align: right;
+                                }
+                            }
+
+                            .p4 {
+                                img {
+                                    width: .3rem;
+                                    margin-right: .27rem;
+                                    height: auto;
+                                }
+
+                                a {
+                                    min-width: 4.06rem;
+                                    font-size: .28rem;
+                                    font-family: SFPro-Regular SFPro;
+                                    font-weight: 400;
+                                    color: #0060B9;
+                                    line-height: .34rem;
+                                    // text-align: right;
+                                }
+                            }
+                        }
+
+                        .fr {
+                            position: absolute;
+                            top: 1.6rem;
+                            left: 50%;
+                            transform: translateX(.35rem);
+
+                            img {
+                                display: block;
+                                width: 6.15rem;
+                                height: 8.48rem;
+                            }
+                        }
+                    }
+                }
+
+                &.section5 {
+                    .section-inner {
+                        padding: .65rem 0 1.52rem;
+
+                        .fl {
+                            width: 6.09rem;
+                            margin-right: .45rem;
+                            text-align: right;
+
+                            .p1 {
+                                font-size: .5rem;
+                                font-family: SFPro-Heavy, SFPro;
+                                font-weight: 800;
+                                line-height: .6rem;
+                                color: #232323;
+                                margin-bottom: .2rem;
+
+                                .c {
+                                    color: #FFD000;
+
+                                }
+                            }
+
+                            .p2 {
+                                font-size: .28rem;
+                                font-family: SFPro-Regular SFPro;
+                                font-weight: 400;
+                                color: #232323;
+                                line-height: .34rem;
+
+                            }
+
+                            .line {
+                                margin: .4rem 0 .5rem;
+                                width: 5.57rem;
+                                border: 1px solid #666666;
+                            }
+
+                            .p3 {
+                                font-size: .28rem;
+                                font-family: SFPro-Light SFPro;
+                                font-weight: 300;
+                                color: #666666;
+                                line-height: .41rem;
+                                letter-spacing: 1px;
+                            }
+                        }
+
+                        .fr {
+                            img {
+                                display: block;
+                                width: 6.09rem;
+                                height: 3.93rem;
+                            }
+                        }
+                    }
+                }
+
+                &.section11 {
+                    height: 7.69rem;
+                    background: url(../imgs/index/11_01.png) no-repeat top center;
+                    background-size: contain;
+
+                    .section-inner {
+                        padding-top: 2.26rem;
+
+                        .p1 {
+                            font-size: .5rem;
+                            font-family: SFPro-Semibold, SFPro;
+                            font-weight: 600;
+                            color: #000000;
+                            line-height: .6rem;
+                            text-align: center;
+                            margin-bottom: .44rem;
+                        }
+
+                        .p2 {
+                            font-size: .28rem;
+                            font-family: SFPro-Light, SFPro;
+                            font-weight: 300;
+                            color: #000000;
+                            line-height: .41rem;
+                            letter-spacing: 1px;
+                            margin-bottom: .48rem;
+                            text-align: center;
+                        }
+
+                        .p3 {
+                            .p3-inner {
+                                height: .8rem;
+                                background: #00CCBB;
+                                border-radius: .15rem;
+                                padding: 0 .42rem;
+                                min-width: 3rem;
+
+                                img {
+                                    margin-right: .14rem;
+                                    width: 0.36rem;
+
+                                }
+
+                                .text {
+                                    font-size: .26rem;
+                                    font-family: SFPro-Heavy, SFPro;
+                                    font-weight: 800;
+                                    color: #FFFFFF;
+                                    line-height: .26rem;
+                                    text-transform: uppercase;
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+#app.mobile {
+    .page-body {
+        .page-body-inner {
+            section {
+                overflow: hidden;
+
+                .section-inner {
+                    position: relative;
+                    z-index: 2;
+                }
+
+                &.section1 {
+                    min-height: 16.46153846rem;
+                    position: relative;
+                    background: #f9f9f9;
+                    padding: .71794872rem .51282051rem 1.38461538rem; // 54px
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 3.94871795rem;
+                        height: 4.66666667rem;
+                        background: url(../imgs/security/m/01_03.png) no-repeat top center;
+                        background-size: contain;
+                        left: 50%;
+                        top: 7.94871795rem;
+                        transform: translate(-50%);
+                    }
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 3.74358974rem;
+                        height: .1025641rem;
+                        background: url(../imgs/security/m/01_07.png) no-repeat top center;
+                        background-size: contain;
+                        bottom: .25641026rem;
+                        right: .51282051rem;
+                    }
+
+                    .section-inner {
+                        .section-title {
+                            font-size: .76923077rem;
+                            font-weight: 800;
+                            color: #232323;
+                            line-height: .92307692rem;
+                            font-family: SFPro-Heavy, SFPro;
+                            margin-bottom: 1.02564103rem;
+                            padding-left: .66666667rem;
+
+                            .c {
+                                color: #FFD000;
+                            }
+                        }
+
+                        .section-body {
+                            margin-bottom: .61538462rem;
+
+                            .fl {
+                                margin-bottom: .51282051rem;
+
+                                .img-box {
+                                    width: 4.35897436rem;
+                                    height: 4.35897436rem;
+
+                                    &:first-child {
+                                        margin-right: .25641026rem;
+                                    }
+
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+
+                            .fr {
+                                .p {
+                                    font-family: SFPro-Light, SFPro;
+                                    font-size: .41025641rem;
+                                    font-weight: 300;
+                                    color: #232323;
+                                    line-height: .56410256rem;
+
+                                    &:first-child {
+                                        margin-bottom: .25641026rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        .list {
+                            .item {
+                                .img-box {
+                                    width: 1.02564103rem;
+                                    height: 1.02564103rem;
+                                    margin-bottom: .35897436rem;
+                                    transition: all .3s;
+
+                                    &:hover {
+                                        transform: scale(1.1);
+                                    }
+
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+
+                                .text {
+                                    font-family: SFPro-Regular SFPro;
+                                    font-size: .41025641rem;
+                                    font-weight: 400;
+                                    color: #232323;
+                                    line-height: .48717949rem;
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.section2 {
+                    height: 17.92307692rem;
+                    background: url(../imgs/security/m/02_01.png) no-repeat top center;
+                    background-size: contain;
+
+                    .section-inner {
+                        padding-top: .76923077rem;
+
+                        .section-title {
+                            font-size: .51282051rem;
+                            line-height: .61538462rem;
+                            font-family: SFPro-Heavy, SFPro;
+                            font-weight: 800;
+                            color: #000000;
+                            text-align: center;
+                            margin-bottom: .64102564rem;
+
+                            .c {
+                                color: #fff;
+                            }
+                        }
+
+                        .list {
+                            .item {
+                                margin: 0 .64102564rem .51282051rem 0;
+
+                                &:nth-of-type(3n) {
+                                    margin-right: 0;
+                                }
+
+                                &:nth-of-type(n+13) {
+                                    margin-bottom: 0;
+                                }
+
+                                .img-box {
+                                    width: 2.56410256rem;
+                                    height: 2.56410256rem;
+                                    transition: all .3s;
+
+                                    &:hover {
+                                        transform: scale(1.1);
+                                    }
+
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.section3 {
+                    background: #F9F9F9;
+                    padding: 1.28205128rem 0;
+
+                    .section-inner {
+                        .section-title {
+                            font-family: SFPro-Heavy, SFPro;
+                            color: #232323;
+                            text-align: center;
+                            font-size: .51282051rem;
+                            font-weight: 800;
+                            line-height: .61538462rem;
+                            margin-bottom: .25641026rem;
+
+                            .c {
+                                color: #FFD000;
+                            }
+                        }
+
+                        .p {
+                            text-align: center;
+                            font-size: .30769231rem;
+                            font-weight: 400;
+                            color: #232323;
+                            line-height: .46153846rem;
+                            width: 4.61538462rem;
+                            margin: 0 auto .51282051rem;
+                        }
+
+                        .list {
+                            padding: 0 .51282051rem;
+
+                            .row {
+                                &:not(:last-child) {
+                                    margin-bottom: .51282051rem;
+                                }
+
+                                .item {
+                                    .img-box {
+                                        transition: all .3s;
+                                        width: 1.15384615rem;
+                                        height: .76923077rem;
+
+                                        &:hover {
+                                            transform: scale(1.1);
+                                        }
+
+                                        img {
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+
+                                            &[src=""] {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.section4 {
+                    .section-inner {
+                        margin: 0 auto;
+                        padding-top: 1.58974359rem;
+
+                        .bg {
+                            width: 10rem;
+                            height: 13.30769231rem;
+                            background: url(../imgs/security/m/04_01.png) no-repeat top center;
+                            background-size: contain;
+                            position: relative;
+
+                            .p1 {
+                                font-family: SFPro-Heavy, SFPro;
+                                font-size: .51282051rem;
+                                font-weight: 800;
+                                color: #000000;
+                                line-height: .69230769rem;
+                                margin-top: -0.30769231rem;
+                            }
+
+                            .p2 {
+                                font-family: SFPro-Heavy, SFPro;
+                                font-size: .51282051rem;
+                                font-weight: 800;
+                                color: #FFD000;
+                                line-height: .69230769rem;
+
+                                br {
+                                    display: none;
+                                }
+                            }
+
+                            .p3-p4-box {
+                                position: absolute;
+                                bottom: .48717949rem;
+                                width: 100%;
+
+
+                                .p3 {
+                                    margin-right: .25641026rem;
+
+                                    img {
+                                        width: .30769231rem;
+                                        margin-right: .20512821rem;
+                                        height: auto;
+                                    }
+
+                                    .text {
+                                        font-size: .25641026rem; // 10px;
+                                        font-family: SFPro-Regular SFPro;
+                                        font-weight: 400;
+                                        color: #000000;
+                                        line-height: .30769231rem;
+                                    }
+                                }
+
+                                .p4 {
+                                    img {
+                                        width: .30769231rem;
+                                        margin-right: .20512821rem;
+                                        height: auto;
+                                    }
+
+                                    a {
+                                        font-size: .25641026rem; // 10px;
+                                        font-family: SFPro-Regular SFPro;
+                                        font-weight: 400;
+                                        line-height: .30769231rem;
+                                        color: #0060B9;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .fr {
+                            position: absolute;
+                            top: 3.17948718rem;
+                            left: 50%;
+                            margin-left: -3.84615385rem;
+
+                            img {
+                                display: block;
+                                width: 7.69230769rem;
+                                height: 10.64102564rem;
+                            }
+                        }
+                    }
+                }
+
+                &.section5 {
+                    .section-inner {
+                        padding: 1.02564103rem 0 1.28205128rem;
+
+                        .fl {
+                            text-align: center;
+                            padding: 0 20px;
+
+                            .p1 {
+
+                                font-size: .51282051rem;
+                                line-height: .61538462rem;
+                                font-family: SFPro-Heavy, SFPro;
+                                font-weight: 800;
+                                color: #232323;
+                                margin-bottom: .25641026rem;
+
+                                .c {
+                                    color: #FFD000;
+
+                                }
+                            }
+
+                            .p2 {
+                                font-size: .30769231rem;
+                                font-family: SFPro-Regular SFPro;
+                                font-weight: 400;
+                                color: #232323;
+                                line-height: .35897436rem;
+                                margin-bottom: .51282051rem;
+
+                            }
+
+
+                            .p3 {
+                                font-size: .41025641rem;
+                                font-family: SFPro-Light SFPro;
+                                font-weight: 300;
+                                color: #666666;
+                                line-height: .56410256rem;
+                                letter-spacing: 1px;
+                                margin-bottom: .51282051rem;
+                                text-align: left;
+                            }
+                        }
+
+                        .fr {
+                            img {
+                                display: block;
+                                width: 8.46153846rem;
+                                height: 5.46153846rem;
+                            }
+                        }
+                    }
+                }
+
+                &.section11 {
+                    height: 8.35897436rem;
+                    background: url(../imgs/index/m/11_01.png) no-repeat top center;
+                    background-size: contain;
+
+
+
+                    .section-inner {
+                        padding: 2.69230769rem .51282051rem 0;
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            width: 1.15384615rem;
+                            height: 1.15384615rem;
+                            top: 1.02564103rem;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            background: url(../imgs/index/m/11_03.png) no-repeat top center;
+                            background-size: contain;
+                        }
+
+                        .p1 {
+                            font-family: SFPro-Semibold, SFPro;
+                            font-weight: 600;
+                            color: #000000;
+                            text-align: center;
+                            font-size: .46153846rem;
+                            line-height: .61538462rem;
+                            margin-bottom: .25641026rem;
+                        }
+
+                        .p2 {
+                            font-size: .41025641rem;
+                            font-family: SFPro-Light, SFPro;
+                            font-weight: 300;
+                            color: #000000;
+                            line-height: .51282051rem;
+                            letter-spacing: 1px;
+                            margin-bottom: .51282051rem;
+                            text-align: center;
+                        }
+
+                        .p3 {
+                            .p3-inner {
+                                height: 1.02564103rem;
+                                background: #00CCBB;
+                                border-radius: .20512821rem;
+                                padding: 0 .38461538rem;
+                                min-width: 3.84615385rem;
+
+                                img {
+                                    width: .46153846rem;
+                                    margin-right: .17948718rem;
+
+                                }
+
+                                .text {
+                                    font-size: .33333333rem;
+                                    font-family: SFPro-Heavy, SFPro;
+                                    font-weight: 800;
+                                    color: #FFFFFF;
+                                    line-height: .33333333rem;
+                                    text-transform: uppercase;
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+.about-us-dropdown.mobile {
+    .el-dropdown-menu__item {
+        a {
+
+            &:hover,
+            &.security {
+                background: #F1F1F1;
+                color: #646464;
+            }
+        }
+    }
+
+    .popper__arrow {
+        display: none;
+    }
+}
