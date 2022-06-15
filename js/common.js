@@ -78,6 +78,7 @@ $(() => {
                         .use(i18nextHttpBackend)
                         .use(i18nextBrowserLanguageDetector)
                         .init({
+                            load: "languageOnly",
                             backend: {
                                 loadPath: "./locales/{{lng}}/{{ns}}.json",
                             },
@@ -191,7 +192,7 @@ $(() => {
                             }
                         });
                 } catch (e) {
-                    alert('asdf')
+                    // alert('asdf')
                     console.log(e);
                 }
 
